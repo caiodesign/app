@@ -1,0 +1,87 @@
+/* B2Bi Custom Style */
+
+/* Header */
+
+.header-table{
+  background-color: #fff;
+  padding-top: 10px !important;
+  padding-left: 20px;
+}
+
+.page-header-content{
+  padding-top: 20px;
+}
+
+.page-header{
+  background-image: url('../images/backgrounds/header-bg-color.png');
+  background-size: cover;
+}
+
+.header-empresa{
+  margin-bottom: 0 !important;
+}
+
+.nav-empresa{
+  text-align: center;
+  background: rgba(0,0,0,.12);
+  padding: 11px 10px 9px 10px;
+  width: 45px;
+  list-style-type: none;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.nav-empresa i{
+  color: #fff;
+}
+
+.empresa{
+  font-size: 15px;
+}
+
+.header-empresa-select{
+  display: inline-table;
+}
+.header-empresa-active{
+  color: #fff;
+  display: inline;
+  background: rgba(0,0,0,.12);
+  padding: 13px 13px 11px 13px;
+  margin-right: 1px;
+}
+
+
+/* Content */
+
+.thumbnail-name{
+  font-size: 16px;
+  padding: 15px;
+  display: inline-flex;
+}
+
+.thumbnail p{
+  padding-top: 10px;
+  line-height: 70px;
+  margin-bottom: 0;
+  font-size: 76px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.thumbnail small{
+  text-align: center;
+  margin: 0 auto;
+  display: table;
+  font-weight: 500;
+  color: #9E9E9E;
+  padding-bottom: 20px;
+}
+
+.thumbnail hr{
+  margin: 0;
+}
+
+.thumbnail h6{
+  font-size: 14px;
+  text-align: left;
+}

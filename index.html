@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>B2Bi - Painel principal</title>
+
+	<!-- B2Bi Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- B2Bi Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- B2Bi Theme JS files -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/lines.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/area.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/area_stacked.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/line_intervals.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/area_intervals.js"></script>
+	<script type="text/javascript" src="assets/js/charts/google/lines/area_stepped.js"></script>
+	<!-- /theme JS files -->
+
+
+</head>
+
+<body>
+
+	<!-- B2Bi Main navbar -->
+	<div class="navbar navbar-default navbar-lg header-highlight">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+
+			<ul class="nav navbar-nav pull-right visible-xs-block">
+				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+			</ul>
+		</div>
+
+		<ul class="nav navbar-nav">
+			<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse" id="navbar-mobile">
+
+			<ul class="nav navbar-nav navbar-right">
+
+				<li>
+					<a href="#">
+						<i class="icon-cog3"></i>
+						<span class="visible-xs-inline-block position-right">Notificações</span>
+					</a>
+				</li>
+
+				<li class="dropdown dropdown-user">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<img src="assets/images/image.png" alt="">
+						<span>Caio</span>
+						<i class="caret"></i>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu-right">
+						<li><a href="#"><i class="icon-user-plus"></i> Minha conta</a></li>
+						<li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Notificações</a></li>
+						<li class="divider"></li>
+						<li><a href="#"><i class="icon-cog5"></i> Configurações</a></li>
+						<li><a href="#"><i class="icon-switch2"></i> Sair</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main sidebar -->
+			<div class="sidebar sidebar-main">
+				<div class="sidebar-content">
+
+					<!-- User menu -->
+					<div class="sidebar-user">
+						<div class="category-content">
+							<div class="media">
+								<a href="#" class="media-left"><img src="assets/images/image.png" class="img-circle img-sm" alt=""></a>
+								<div class="media-body">
+									<span class="media-heading text-semibold">Caio Design</span>
+									<div class="text-size-mini text-muted">
+										<i class="icon-pin text-size-small"></i> &nbsp;São Paulo, SP
+									</div>
+								</div>
+
+								<div class="media-right media-middle">
+									<ul class="icons-list">
+										<li>
+											<a href="#"><i class="icon-cog3"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /user menu -->
+
+
+					<!-- Main navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+
+								<!-- Main -->
+								<li class="navigation-header"><span>Funcionalidades</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Painel principal</span></a></li>
+								<li>
+									<a href="#"><i class="icon-stack"></i> <span>Acesso às notas</span></a>
+									<ul>
+										<li>
+											<a href="#">Recebidas</a>
+											<ul>
+												<li><a href="#">NFe</a></li>
+												<li><a href="#">NFSe</a></li>
+												<li><a href="#">CTe</a></li>
+											</ul>
+										</li>
+										<!-- divisor <li class="navigation-divider"></li> -->
+										<li>
+											<a href="#">Emitidas</a>
+											<ul>
+												<li><a href="#">NFe</a></li>
+												<li><a href="#">NFSe</a></li>
+												<li><a href="#">CTe</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-folder-upload3"></i>
+										<span>Upload de notas</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-pencil6"></i>
+										<span>Emitir notas</span>
+									</a>
+								</li>
+								<li class="navigation-header"><span>Configurações</span> <i class="icon-menu" title="Main pages"></i></li>
+								<li>
+									<a href="#"><i class="icon-stack"></i> <span>Acesso às notas</span></a>
+									<ul>
+										<li>
+											<a href="#">Usuários</a>
+										</li>
+										<!-- divisor <li class="navigation-divider"></li> -->
+										<li>
+											<a href="#">Empresas</a>
+										</li>
+										<li>
+											<a href="#">Clientes</a>
+										</li>
+										<li>
+											<a href="#">Fornecedores</a>
+										</li>
+										<li>
+											<a href="#">Configurações</a>
+										</li>
+									</ul>
+								</li>
+								<!-- /main -->
+
+							</ul>
+						</div>
+					</div>
+					<!-- /main navigation -->
+
+				</div>
+			</div>
+			<!-- /main sidebar -->
+
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+
+				<div class="page-header"><!-- Page header -->
+					<div class="page-header-content">
+						<div class="page-title">
+							<h3><span class="text-light">Bem vindo Caio</span></h3>
+						</div>
+
+
+
+						<div class="header-empresa"><!-- tables -->
+							<div class="header-empresa-active">
+								<span class="empresa">Anadi Consultoria</span>
+							</div>
+							<div class="header-empresa-select">
+								<ul class="nav-empresa">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" icon-menu"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#"><span class="label label-primary pull-right">NOVAS NOTAS</span> Anadi Con.</a></li>
+											<li><a href="#"><span class="label label-success pull-right">OK</span> Caio Design</a></li>
+											<li><a href="#"><span class="label label-danger pull-right">Erro</span> B2Bi Serviços</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div><!-- /tables -->
+
+					</div>
+
+					<!-- Breadcrumb
+						<div class="breadcrumb-line">
+							<ul class="breadcrumb">
+								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+								<li><a href="2_col.html">Starters</a></li>
+								<li class="active">2 columns</li>
+							</ul>
+
+							<ul class="breadcrumb-elements">
+								<li><a href="#"><i class="icon-comment-discussion position-left"></i> Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<i class="icon-gear position-left"></i>
+										Dropdown
+										<span class="caret"></span>
+									</a>
+
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+										<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+										<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+										<li class="divider"></li>
+										<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					-->
+
+					<div class="header-table"><!-- tables -->
+						<ul class="nav nav-tabs nav-tabs-bottom">
+							<li class="active text-bold"><a href="#bottom-tab1" data-toggle="tab">Inicio</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Acessar notas <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#bottom-tab2" data-toggle="tab">NFe</a></li>
+									<li><a href="#bottom-tab3" data-toggle="tab">NFSe</a></li>
+									<li><a href="#bottom-tab4" data-toggle="tab">CTe</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Emitir notas <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#bottom-tab5" data-toggle="tab">NFe</a></li>
+									<li><a href="#bottom-tab6" data-toggle="tab">NFSe</a></li>
+									<li><a href="#bottom-tab7" data-toggle="tab">CTe</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /tables -->
+
+				</div><!-- /page header -->
+
+				<!-- Content area -->
+				<div class="content">
+
+
+					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 01 -->
+
+						<div class="thumbnail">
+							<span class="thumbnail-name text-semibold">Recebidas: Novembro</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
+							<p class="text-info">42</p><!-- Notas Recebidas -->
+							<small>NOTAS</small>
+							<hr>
+				    	<div class="caption text-center">
+				    		<h6 class="no-margin"><span class="text-grey">Total de:</span> R$28.120,00</h6>
+				    	</div>
+				  	</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 02 -->
+
+						<div class="thumbnail">
+							<span class="thumbnail-name text-semibold">Emitidas: Novembro</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
+							<p class="text-yellow">12</p><!-- Notas Recebidas -->
+							<small>NOTAS</small>
+							<hr>
+				    	<div class="caption text-center">
+				    		<h6 class="no-margin"><span class="text-grey">Total de:</span> R$8.294,60</h6>
+				    	</div>
+				  	</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 03 -->
+
+						<div class="thumbnail">
+							<span class="thumbnail-name text-semibold">Sem consultar:</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
+							<p class="text-danger">02</p><!-- Notas Recebidas -->
+							<small>DIAS</small>
+							<hr>
+				    	<div class="caption text-center">
+				    		<h6 class="no-margin"><span class="text-grey">Última consulta:</span> 04/10/2016</h6>
+				    	</div>
+				  	</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 04 -->
+
+						<div class="thumbnail">
+							<span class="thumbnail-name text-semibold">Total de notas:</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
+							<p class="text-blue-grey">242</p><!-- Notas Recebidas -->
+							<small>NOTAS</small>
+							<hr>
+				    	<div class="caption text-center">
+				    		<h6 class="no-margin"><span class="text-grey">Início:</span> 01/05/2015</h6>
+				    	</div>
+				  	</div>
+					</div>
+
+					<div class="col-lg-12">
+						<!-- Simple line chart -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Visão de notas recebidas e emitidas</h5>
+								<div class="heading-elements">
+									<ul class="icons-list">
+														<li><a data-action="collapse"></a></li>
+														<li><a data-action="reload"></a></li>
+														<li><a data-action="close"></a></li>
+													</ul>
+												</div>
+							</div>
+
+							<div class="panel-body">
+								<p class="content-group">Confira uma visão geral das notas de sua empresa.</p>
+
+								<div class="chart-container">
+									<div class="chart" id="google-line"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /simple line chart -->
+					</div>
+
+
+					<!-- Footer -->
+					<div class="footer text-muted">
+						&copy; 2016. <a href="#">B2Bi APP</a></a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>
