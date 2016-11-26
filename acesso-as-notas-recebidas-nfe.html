@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>B2Bi - Painel principal</title>
+	<title>B2Bi - Notas recebidas</title>
 
 	<!-- B2Bi Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -27,12 +27,6 @@
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/lines.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/area.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/area_stacked.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/line_intervals.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/area_intervals.js"></script>
-	<script type="text/javascript" src="assets/js/charts/google/lines/area_stepped.js"></script>
 	<!-- /theme JS files -->
 
 
@@ -129,14 +123,14 @@
 
 								<!-- Main -->
 								<li class="navigation-header"><span>Funcionalidades</span> <i class="icon-menu" title="Main pages"></i></li>
-								<li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Painel principal</span></a></li>
-								<li>
+								<li><a href="index.html"><i class="icon-home4"></i> <span>Painel principal</span></a></li>
+								<li class="active">
 									<a href="#"><i class="icon-stack"></i> <span>Acesso às notas</span></a>
 									<ul>
 										<li>
 											<a href="#">Recebidas</a>
 											<ul>
-												<li><a href="#">NFe</a></li>
+												<li class="active"><a href="#">NFe</a></li>
 												<li><a href="#">NFSe</a></li>
 												<li><a href="#">CTe</a></li>
 											</ul>
@@ -203,14 +197,19 @@
 
 
 				<div class="page-header"><!-- Page header -->
+
 					<div class="breadcrumb-line"><!-- B2Bi Breadcrumb -->
 						<ul class="breadcrumb">
 							<li><a href="index.html"><i class="icon-home2 position-left"></i> Início</a></li>
+							<li><a href="#">ACESSO ÀS NOTAS</a></li>
+							<li><a href="#">RECEBIDAS</a></li>
+							<li><a href="#">NFe</a></li>
 						</ul>
 					</div><!-- /breadcrumb -->
+
 					<div class="page-header-content">
 						<div class="page-title">
-							<h3><span class="text-light">Bem vindo Caio</span></h3>
+							<h3><span class="text-light">Consultar notas: NFe</span></h3>
 						</div>
 
 
@@ -235,42 +234,12 @@
 
 					</div>
 
-					<!-- Breadcrumb
-						<div class="breadcrumb-line">
-							<ul class="breadcrumb">
-								<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
-								<li><a href="2_col.html">Starters</a></li>
-								<li class="active">2 columns</li>
-							</ul>
-
-							<ul class="breadcrumb-elements">
-								<li><a href="#"><i class="icon-comment-discussion position-left"></i> Link</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icon-gear position-left"></i>
-										Dropdown
-										<span class="caret"></span>
-									</a>
-
-									<ul class="dropdown-menu dropdown-menu-right">
-										<li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
-										<li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
-										<li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
-										<li class="divider"></li>
-										<li><a href="#"><i class="icon-gear"></i> All settings</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					-->
-
 					<div class="header-table"><!-- tables -->
 						<ul class="nav nav-tabs nav-tabs-bottom">
-							<li class="active text-bold"><a href="#bottom-tab1" data-toggle="tab">Início</a></li>
-							<li class="dropdown">
+							<li class="dropdown active text-bold">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Acessar notas <span class="caret"></span></a>
 								<ul class="dropdown-menu dropdown-menu-right">
-									<li><a href="#bottom-tab2" data-toggle="tab">NFe</a></li>
+									<li class="active"><a href="#bottom-tab2" data-toggle="tab">NFe</a></li>
 									<li><a href="#bottom-tab3" data-toggle="tab">NFSe</a></li>
 									<li><a href="#bottom-tab4" data-toggle="tab">CTe</a></li>
 								</ul>
@@ -291,83 +260,209 @@
 				<!-- Content area -->
 				<div class="content">
 
-
-					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 01 -->
-
-						<div class="thumbnail">
-							<span class="thumbnail-name text-semibold">Recebidas: Novembro</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
-							<p class="text-info">42</p><!-- Notas Recebidas -->
-							<small>NOTAS</small>
-							<hr>
-				    	<div class="caption text-center">
-				    		<h6 class="no-margin"><span class="text-grey">Total de:</span> R$28.120,00</h6>
-				    	</div>
-				  	</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 02 -->
-
-						<div class="thumbnail">
-							<span class="thumbnail-name text-semibold">Emitidas: Novembro</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
-							<p class="text-yellow">12</p><!-- Notas Recebidas -->
-							<small>NOTAS</small>
-							<hr>
-				    	<div class="caption text-center">
-				    		<h6 class="no-margin"><span class="text-grey">Total de:</span> R$8.294,60</h6>
-				    	</div>
-				  	</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 03 -->
-
-						<div class="thumbnail">
-							<span class="thumbnail-name text-semibold">Sem consultar:</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
-							<p class="text-danger">02</p><!-- Notas Recebidas -->
-							<small>DIAS</small>
-							<hr>
-				    	<div class="caption text-center">
-				    		<h6 class="no-margin"><span class="text-grey">Última consulta:</span> 04/10/2016</h6>
-				    	</div>
-				  	</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6"><!-- B2Bi Card 04 -->
-
-						<div class="thumbnail">
-							<span class="thumbnail-name text-semibold">Total de notas:</span><a href="#" class="pull-right text-grey" style="padding: 16px;"><i class=" icon-more2"></i></a>
-							<p class="text-blue-grey">242</p><!-- Notas Recebidas -->
-							<small>NOTAS</small>
-							<hr>
-				    	<div class="caption text-center">
-				    		<h6 class="no-margin"><span class="text-grey">Início:</span> 01/05/2015</h6>
-				    	</div>
-				  	</div>
-					</div>
-
-					<div class="col-lg-12">
-						<!-- Simple line chart -->
-						<div class="panel panel-flat">
-							<div class="panel-heading">
-								<h5 class="panel-title">Visão de notas recebidas e emitidas</h5>
-								<div class="heading-elements">
-									<ul class="icons-list">
-														<li><a data-action="collapse"></a></li>
-														<li><a data-action="reload"></a></li>
-														<li><a data-action="close"></a></li>
-													</ul>
-												</div>
-							</div>
-
-							<div class="panel-body">
-								<p class="content-group">Confira uma visão geral das notas de sua empresa.</p>
-
-								<div class="chart-container">
-									<div class="chart" id="google-line"></div>
-								</div>
-							</div>
+					<!-- B2BI QUERY -->
+						<div class="panel-heading">
+							<h5 class="panel-title">B2Bi QUERY</h5>
+							<div class="heading-elements">
+								<ul class="icons-list">
+													<li><a data-action="collapse"></a></li>
+													<li><a data-action="reload"></a></li>
+													<li><a data-action="close"></a></li>
+												</ul>
+											</div>
 						</div>
-						<!-- /simple line chart -->
+
+						<table class="table datatable-show-all">
+							<thead>
+								<tr class="text-bold"><!-- Itens da query -->
+									<div class="checkbox">
+										<label style="font-size: 1.3em">
+											<input type="checkbox" name="check" value="">
+											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										</label>
+									</div>
+									<th class="text-center">Ações</th>
+									<td>Manifestação</td>
+									<td>Dt. da emissão</td>
+									<td>Núm. NF</td>
+									<td>Situação</td>
+									<td>Chave Nfe</td>
+									<td>Emitente</td>
+									<td>Destinatário</td>
+									<td>Tipo</td>
+									<td>Ambiente</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+													<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+									<td><span class="label label-danger">SEM MANIFESTAÇÃO</span></td>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-success">Autorizado</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+													<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+									<td><span class="label label-danger">CANCELADA</span></td>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-black">DESCONHECIDA</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+													<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+										<td><span class="label label-warning">NÃO REALIZADA</span></td>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-danger">CANCELADA</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+													<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+									<td><span class="label label-info">CIENCIA</span></td>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-danger">CANCELADA</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+										<td class="text-center">
+											<ul class="icons-list">
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="icon-menu9"></i>
+													</a>
+
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+														<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+														<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+													</ul>
+												</li>
+											</ul>
+										</td></td>
+									<td><span class="label label-danger">SEM MANIFESTAÇÃO</span>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-danger">CANCELADA</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+								<tr><!-- Nota 02 -->
+									<td><input type="checkbox" name="vehicle" value="Car"></td>
+									<td class="text-center">
+										<ul class="icons-list">
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<i class="icon-menu9"></i>
+												</a>
+
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+													<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+													<li><a href="#"><i class="icon-file-word"></i>Manifestar</a></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+									<td><span class="label label-success">CONFIRMADO</span></td>
+									<td>000723770</td>
+									<td>25/11/2016</td>
+									<td><span class="label label-danger">CANCELADA</span></td>
+									<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+									<td>NESTLE BRASIL LTDA</td>
+									<td>FINDER COMPONENTES LTDA</td>
+									<td>NF DE SAÍDA</td>
+									<td>PRODUÇÃO</td>
+								</tr>
+
+							</tbody>
+						</table>
 					</div>
+					<!-- /B2BI QUERY -->
+				</div>
 
 
 					<!-- Footer -->
