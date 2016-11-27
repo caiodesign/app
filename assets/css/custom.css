@@ -113,6 +113,10 @@ input[type=checkbox]:after {
   }
 }
 
+.b2bi-query{
+	background-color: #fff;	
+}
+
 /* Radio & CheckBox B2bi */
 .checkbox label:after,
 .radio label:after {
@@ -172,4 +176,8 @@ input[type=checkbox]:after {
 .checkbox label input[type="checkbox"]:disabled + .cr,
 .radio label input[type="radio"]:disabled + .cr {
     opacity: .5;
+}
+
+.checkbox label{
+	padding-left: 0px;
 }
