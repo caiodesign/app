@@ -122,6 +122,9 @@ input[type=checkbox]:after {
   }
 }
 
+.b2bi-query{
+  padding: 0px;
+}
 
 /* Radio & CheckBox B2bi */
 .checkbox label:after,
