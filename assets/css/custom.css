@@ -205,12 +205,6 @@ input[type=checkbox]:after {
   border-bottom: 1px solid #ddd !important;
 }
 
-.datatable-header, .datatable-footer{ /* Escondendo botões de filtro */
-  display: none;
-}
-
-.datatable-footer{}
-
 .total-de-notas-recebidas{
   font-weight: bold;
   color: #2196F3;
@@ -225,6 +219,8 @@ input[type=checkbox]:after {
 .panel-title{
   font-weight: bold;
 }
+
+/* b2bi filter buttons */
 
 .b2bi-filter-buttons{
   margin-bottom: 20px;
@@ -243,4 +239,17 @@ input[type=checkbox]:after {
 
 .b2bi-filter-buttons .text-slate-800, .text-slate-800:hover, .text-slate-800:focus {
     color: #fff !important;
+}
+
+
+/* Toggle b2bi filter buttons */
+
+.b2bi-filter-buttons-nav-toggle{
+  background: #2196F3;
+}
+
+.b2bi-filter-buttons-nav-toggle .navigation{
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
