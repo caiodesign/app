@@ -17,10 +17,15 @@
   margin-bottom: 0 !important;
 }
 
-.datatable-show-all td{
+.table td, .table th{
   padding-left: 5px !important;
   padding-right: 5px !important;
-  text-align: center !important;
+}
+
+.footable-row-detail-value{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 input[type=checkbox] {

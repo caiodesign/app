@@ -24,12 +24,9 @@
 	<!-- /core JS files -->
 
 	<!-- B2Bi Theme JS files -->
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript" src="assets/js/pages/datatables_responsive.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/responsive.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/tables/footable/footable.min.js"></script>
 	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/table_responsive.js"></script>
 	<!-- /theme JS files -->
 
 
@@ -265,72 +262,78 @@
 
 					<!-- B2Bi Filter Buttons -->
 					<div class="b2bi-filter-buttons">
-							<button type="button" class="btn border-slate btn-flat active"><i class=" icon-folder-download position-left"></i> Recebidas</button>
-							<button type="button" class="btn border-slate btn-flat"><i class=" icon-folder-upload position-left"></i> Emitidas</button>
-							<div class="b2bi-filter-buttons pull-right">
-								<div class="btn-group">
-											<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-pencil6"></i> Manifestar <span class="caret"></span></button>
-											<ul class="dropdown-menu dropdown-menu-left">
-											<li><a href="#"><i class=" icon-checkmark3"></i> Confirmar</a></li>
-											<li><a href="#"><i class="icon-cross2"></i> Cancelar</a></li>
-											<li><a href="#"><i class=" icon-eye"></i> Ciencia</a></li>
-										</ul>
-									</div>
+						<div class="row">
+
+							<div id="b2bi-filter-nav">
+								<button type="button" class="btn border-slate btn-flat active"><i class=" icon-folder-download position-left"></i> Recebidas</button>
+								<button type="button" class="btn border-slate btn-flat"><i class=" icon-folder-upload position-left"></i> Emitidas</button>
+								<div class="b2bi-filter-buttons pull-right">
 									<div class="btn-group">
-												<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-download"></i> Download <span class="caret"></span></button>
-												<ul class="dropdown-menu dropdown-menu-right">
-												<li><a href="#"><i class=" icon-file-zip"></i> Baixar tudo em .ZIP</a></li>
-												<li><a href="#"><i class=" icon-file-pdf"></i> Baixar .PDF</a></li>
-												<li><a href="#"><i class=" icon-file-xml"></i> Baixar .XML</a></li>
+												<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-pencil6"></i> Manifestar <span class="caret"></span></button>
+												<ul class="dropdown-menu dropdown-menu-left">
+												<li><a href="#"><i class=" icon-checkmark3"></i> Confirmar</a></li>
+												<li><a href="#"><i class="icon-cross2"></i> Cancelar</a></li>
+												<li><a href="#"><i class=" icon-eye"></i> Ciencia</a></li>
 											</ul>
-									</div>
-									<div class="btn-group">
-											<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-equalizer3"></i> Filtrar <span class="caret"></span></button>
-									</div>
+										</div>
+										<div class="btn-group">
+													<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-download"></i> Download <span class="caret"></span></button>
+													<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#"><i class=" icon-file-zip"></i> Baixar tudo em .ZIP</a></li>
+													<li><a href="#"><i class=" icon-file-pdf"></i> Baixar .PDF</a></li>
+													<li><a href="#"><i class=" icon-file-xml"></i> Baixar .XML</a></li>
+												</ul>
+										</div>
+										<div class="btn-group">
+												<button type="button" class="btn border-slate btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="icon-equalizer3"></i> Filtrar <span class="caret"></span></button>
+										</div>
+								</div>
 							</div>
 
+						</div>
 					</div>
 					<!-- /B2Bi Filter Buttons -->
-					<div class="col-md-12 b2bi-query">
-					<!-- B2BI QUERY -->
-						<div class="panel-heading">
-							<h5 class="panel-title">Total geral: <span class="total-de-notas-recebidas">6</span></h5>
-							<div class="heading-elements">
-								<ul class="icons-list">
-													<li><a data-action="collapse"></a></li>
-													<li><a data-action="reload"></a></li>
-													<li><a data-action="close"></a></li>
-												</ul>
-											</div>
-						</div>
+					<div class="col-md-12 b2bi-query"><!-- B2BI QUERY -->
+						<!-- Table with togglable columns -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Total geral: <span class="total-de-notas-recebidas">04</span></h5>
+								<div class="heading-elements">
+									<ul class="icons-list">
+														<li><a data-action="collapse"></a></li>
+														<li><a data-action="reload"></a></li>
+														<li><a data-action="close"></a></li>
+													</ul>
+												</div>
+							</div>
 
-						<form>
-							<table class="table datatable-responsive datatable-show-all">
+							<table class="table table-togglable table-hover">
 								<thead>
-									<tr class="text-bold"><!-- Itens da query -->
+									<tr>
 
-										<td>
+										<th data-toggle="true">
 											<div class="checkbox">
 												<label style="font-size: 1em">
 													<input type="checkbox" name="check" value="">
 													<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
 												</label>
 											</div>
-										</td>
-										<td class="text-center">Ações</td>
-										<td>Manifestação</td>
-										<td>Núm. NF</td>
-										<td>Emissão</td>
-										<td>Situação</td>
-										<td>Chave Nfe</td>
-										<td>Emitente</td>
-										<td>Destinatário</td>
-										<td>Tipo</td>
-										<td>Ambiente</td>
+										</th>
+										<th data-toggle="true">Ações</th>
+										<th data-hide="phone">Manifestação</th>
+										<th data-toggle="true">Núm. NF</th>
+										<th data-hide="phone">Emissão</th>
+										<th data-toggle="true">Situação</th>
+										<th data-hide="phone,tablet">Chave NFe</th>
+										<th data-hide="phone">Emitente</th>
+										<th data-hide="phone,tablet">Destinatário</th>
+										<th data-hide="phone,tablet">Tipo</th>
+										<th data-hide="phone,tablet">Ambiente</th>
 									</tr>
 								</thead>
 								<tbody>
-									<tr><!-- Nota 02 -->
+
+									<tr><!-- Nota 01 -->
 										<td>
 											<div class="checkbox">
 												<label style="font-size: 1em">
@@ -357,190 +360,124 @@
 										<td><span class="label label-danger">SEM MANIFES.</span></td>
 										<td>000723770</td>
 										<td>25/11/16</td>
+										<td><span class="label label-black">DESCONHECIDA</span></td>
+										<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+										<td>NESTLE BRAS.</td>
+										<td>FINDER COMP.</td>
+										<td>SAÍDA</td>
+										<td>PRODUÇÃO</td>
+									</tr><!-- /Nota 01 -->
+
+									<tr><!-- Nota 02 -->
+										<td>
+											<div class="checkbox">
+												<label style="font-size: 1em">
+													<input type="checkbox" name="check" value="">
+													<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+												</label>
+											</div>
+										</td>
+										<td class="text-center">
+											<ul class="icons-list">
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="icon-menu9"></i>
+													</a>
+
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+														<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+														<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
+													</ul>
+												</li>
+											</ul>
+										</td>
+										<td><span class="label label-success">SEM MANIFES.</span></td>
+										<td>000723770</td>
+										<td>25/11/16</td>
 										<td><span class="label label-success">Autorizado</span></td>
 										<td><a href="#">35161160409075047035550010007237701170185471</a></td>
 										<td>NESTLE BRAS.</td>
 										<td>FINDER COMP.</td>
 										<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
+										<td>PRODUÇÃO</td>
+									</tr><!-- /Nota 02 -->
 
-										<tr><!-- Nota 02 -->
-											<td>
-												<div class="checkbox">
-													<label style="font-size: 1em">
-														<input type="checkbox" name="check" value="">
-														<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</td>
-											<td class="text-center">
-												<ul class="icons-list">
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-															<i class="icon-menu9"></i>
-														</a>
+									<tr><!-- Nota 03 -->
+										<td>
+											<div class="checkbox">
+												<label style="font-size: 1em">
+													<input type="checkbox" name="check" value="">
+													<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+												</label>
+											</div>
+										</td>
+										<td class="text-center">
+											<ul class="icons-list">
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="icon-menu9"></i>
+													</a>
 
-														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
-															<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
-															<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
-														</ul>
-													</li>
-												</ul>
-											</td>
-											<td><span class="label label-danger">CANCELADA</span></td>
-											<td>000723770</td>
-											<td>25/11/16</td>
-											<td><span class="label label-black">DESCONHECIDA</span></td>
-											<td><a href="#">35161160409075047035550010007237701170185471</a></td>
-											<td>NESTLE BRAS.</td>
-											<td>FINDER COMP.</td>
-											<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
-										<tr><!-- Nota 02 -->
-											<td>
-												<div class="checkbox">
-													<label style="font-size: 1em">
-														<input type="checkbox" name="check" value="">
-														<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</td>
-											<td class="text-center">
-												<ul class="icons-list">
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-															<i class="icon-menu9"></i>
-														</a>
-
-														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
-															<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
-															<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
-														</ul>
-													</li>
-												</ul>
-											</td>
-												<td><span class="label label-warning">NÃO REALIZADA</span></td>
-											<td>000723770</td>
-											<td>25/11/16</td>
-											<td><span class="label label-danger">CANCELADA</span></td>
-											<td><a href="#">35161160409075047035550010007237701170185471</a></td>
-											<td>NESTLE BRAS.</td>
-											<td>FINDER COMP.</td>
-											<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
-										<tr><!-- Nota 02 -->
-											<td>
-												<div class="checkbox">
-													<label style="font-size: 1em">
-														<input type="checkbox" name="check" value="">
-														<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</td>
-											<td class="text-center">
-												<ul class="icons-list">
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-															<i class="icon-menu9"></i>
-														</a>
-
-														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
-															<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
-															<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
-														</ul>
-													</li>
-												</ul>
-											</td>
-											<td><span class="label label-info">CIENCIA</span></td>
-											<td>000723770</td>
-											<td>25/11/16</td>
-											<td><span class="label label-danger">CANCELADA</span></td>
-											<td><a href="#">35161160409075047035550010007237701170185471</a></td>
-											<td>NESTLE BRAS.</td>
-											<td>FINDER COMP</td>
-											<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
-										<tr><!-- Nota 02 -->
-											<td>
-												<div class="checkbox">
-													<label style="font-size: 1em">
-														<input type="checkbox" name="check" value="">
-														<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</td>
-												<td class="text-center">
-													<ul class="icons-list">
-														<li class="dropdown">
-															<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-																<i class="icon-menu9"></i>
-															</a>
-
-															<ul class="dropdown-menu dropdown-menu-right">
-																<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
-																<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
-																<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
-															</ul>
-														</li>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+														<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+														<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
 													</ul>
-											<td><span class="label label-danger">SEM MANIFES.</span>
-											<td>000723770</td>
-											<td>25/11/16</td>
-											<td><span class="label label-danger">CANCELADA</span></td>
-											<td><a href="#">35161160409075047035550010007237701170185471</a></td>
-											<td>NESTLE BRAS.</td>
-											<td>FINDER COMP.</td>
-											<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
-										<tr><!-- Nota 02 -->
-											<td>
-												<div class="checkbox">
-													<label style="font-size: 1em">
-														<input type="checkbox" name="check" value="">
-														<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</td>
-											<td class="text-center">
-												<ul class="icons-list">
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-															<i class="icon-menu9"></i>
-														</a>
+												</li>
+											</ul>
+										</td>
+											<td><span class="label label-info">SEM MANIFES.</span></td>
+										<td>000723770</td>
+										<td>25/11/16</td>
+										<td><span class="label label-success">Autorizado</span></td>
+										<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+										<td>NESTLE BRAS.</td>
+										<td>FINDER COMP.</td>
+										<td>SAÍDA</td>
+										<td>PRODUÇÃO</td>
+									</tr><!-- /Nota 03 -->
 
-														<ul class="dropdown-menu dropdown-menu-right">
-															<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
-															<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
-															<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
-														</ul>
-													</li>
-												</ul>
-											</td>
-											<td><span class="label label-success">CONFIRMADO</span></td>
-											<td>000723770</td>
-											<td>25/11/16</td>
-											<td><span class="label label-danger">CANCELADA</span></td>
-											<td><a href="#">35161160409075047035550010007237701170185471</a></td>
-											<td>NESTLE BRAS.</td>
-											<td>FINDER COMP.</td>
-											<td>SAÍDA</td>
-											<td>PRODUÇÃO</td>
-										</tr>
+									<tr><!-- Nota 04 -->
+										<td>
+											<div class="checkbox">
+												<label style="font-size: 1em">
+													<input type="checkbox" name="check" value="">
+													<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+												</label>
+											</div>
+										</td>
+										<td class="text-center">
+											<ul class="icons-list">
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="icon-menu9"></i>
+													</a>
 
-									</tbody>
-								</table>
-							<form>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-file-pdf"></i>Visualizar .PDF</a></li>
+														<li><a href="#"><i class="icon-file-excel"></i>Exportar para .XML</a></li>
+														<li><a href="#"><i class="icon-pencil6"></i>Manifestar</a></li>
+													</ul>
+												</li>
+											</ul>
+										</td>
+										<td><span class="label label-warning">SEM MANIFES.</span></td>
+										<td>000723770</td>
+										<td>25/11/16</td>
+										<td><span class="label label-danger">Cancelada</span></td>
+										<td><a href="#">35161160409075047035550010007237701170185471</a></td>
+										<td>NESTLE BRAS.</td>
+										<td>FINDER COMP.</td>
+										<td>SAÍDA</td>
+										<td>PRODUÇÃO</td>
+									</tr><!-- /Nota 04 -->
+
+								</tbody>
+							</table>
 						</div>
-					</div>
-					<!-- /B2BI QUERY -->
+						<!-- /table with togglable columns -->
+					</div><!-- /B2BI QUERY -->
 
 
 					<!-- Footer -->

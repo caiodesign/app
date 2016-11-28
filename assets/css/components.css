@@ -13699,14 +13699,14 @@ a.plupload_disabled:focus {
   content: "\e9e4";
   display: inline-block;
   font-family: 'icomoon';
-  font-size: 16px;
+  font-size: 20px;
   vertical-align: middle;
   position: relative;
   top: -1px;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 .footable.breakpoint > tbody > tr.footable-detail-show .footable-toggle:before {
   content: "\e9e7";
