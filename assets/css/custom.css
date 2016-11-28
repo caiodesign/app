@@ -111,10 +111,14 @@ input[type=checkbox]:after {
     padding-bottom: 1px;
     margin-bottom: 10px;
   }
+  .heading-elements.visible{
+    background-color: #2196F3 !important;
+    color: #fff;
+  }
 }
 
 .b2bi-query{
-	background-color: #fff;	
+	background-color: #fff;
 }
 
 /* Radio & CheckBox B2bi */
@@ -180,4 +184,53 @@ input[type=checkbox]:after {
 
 .checkbox label{
 	padding-left: 0px;
+}
+
+.radio, .checkbox {
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.table thead tr{
+  border-bottom: 1px solid #ddd !important;
+}
+
+.datatable-header, .datatable-footer{ /* Escondendo botões de filtro */
+  display: none;
+}
+
+.datatable-footer{}
+
+.total-de-notas-recebidas{
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.panel-heading{
+  padding-left: 5px;
+  padding-bottom: 5px;
+
+}
+
+.panel-title{
+  font-weight: bold;
+}
+
+.b2bi-filter-buttons{
+  margin-bottom: 20px;
+}
+
+
+.b2bi-filter-buttons .btn-flat{
+  color: #2196F3;
+  border-color: #64B5F6;
+}
+
+.b2bi-filter-buttons .active{
+  background-color: #2196F3;
+  color: #fff;
+}
+
+.b2bi-filter-buttons .text-slate-800, .text-slate-800:hover, .text-slate-800:focus {
+    color: #fff !important;
 }

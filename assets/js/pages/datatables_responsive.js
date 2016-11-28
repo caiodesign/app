@@ -22,13 +22,13 @@ $(function() {
         columnDefs: [{ 
             orderable: false,
             width: '100px',
-            targets: [ 5 ]
+            targets: [9]
         }],
         dom: '<"datatable-header"fl><"datatable-scroll-wrap"t><"datatable-footer"ip>',
         language: {
             search: '<span>Filter:</span> _INPUT_',
-            lengthMenu: '<span>Show:</span> _MENU_',
-            paginate: { 'first': 'First', 'last': 'Last', 'next': '&rarr;', 'previous': '&larr;' }
+            lengthMenu: '<span>Mostrar:</span> _MENU_',
+            paginate: { 'first': 'Primeira', 'last': 'Última', 'next': '&rarr;', 'previous': '&larr;' }
         },
         drawCallback: function () {
             $(this).find('tbody tr').slice(-3).find('.dropdown, .btn-group').addClass('dropup');
@@ -127,7 +127,7 @@ $(function() {
     // ------------------------------
 
     // Add placeholder to the datatable filter option
-    $('.dataTables_filter input[type=search]').attr('placeholder','Type to filter...');
+    $('.dataTables_filter input[type=search]').attr('placeholder','Escreva para filtrar...');
 
 
     // Enable Select2 select for the length option
