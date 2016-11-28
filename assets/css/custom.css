@@ -126,6 +126,11 @@ input[type=checkbox]:after {
   padding: 0px;
 }
 
+.b2bi-filter-buttons{
+  padding-right: 5px;
+  padding-left: 11px;
+}
+
 /* Radio & CheckBox B2bi */
 .checkbox label:after,
 .radio label:after {
