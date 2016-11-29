@@ -218,6 +218,7 @@ input[type=checkbox]:after {
 
 .panel-title{
   font-weight: bold;
+  padding-left: 5px;
 }
 
 /* b2bi filter buttons */
@@ -252,4 +253,31 @@ input[type=checkbox]:after {
   padding: 0px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.select2-selection--multiple .select2-search--inline {
+    float: none;/*"remove" o float*/
+    display: inline-block;
+}
+
+.select2-selection--multiple .select2-selection__choice {
+    float: none;
+    display: inline-block;
+}
+
+/* Barra de rolagem
+.select2-selection--multiple .select2-selection__rendered {
+    overflow-x: auto;
+}*/
+
+#b2bi-filtros{
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: solid #ddd 1px;
+}
+
+.bg-b2bi{
+  background-color: #2196F3;
+  color: #fff;
 }
