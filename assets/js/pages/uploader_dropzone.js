@@ -18,9 +18,9 @@ $(function() {
     // Single file
     $("#dropzone_single").dropzone({
         paramName: "file", // The name that will be used to transfer the file
-        maxFilesize: 1, // MB
+        maxFilesize: 2, // MB
         maxFiles: 1,
-        dictDefaultMessage: 'Drop file to upload <span>or CLICK</span>',
+        dictDefaultMessage: 'Arraste e solte os .XMLs,.ZIPs <span>ou CLIQUE para enviar.</span>',
         autoProcessQueue: false,
         init: function() {
             this.on('addedfile', function(file){
@@ -36,7 +36,7 @@ $(function() {
     // Multiple files
     $("#dropzone_multiple").dropzone({
         paramName: "file", // The name that will be used to transfer the file
-        dictDefaultMessage: 'Drop files to upload <span>or CLICK</span>',
+        dictDefaultMessage: 'Arraste e solte os .XMLs,.ZIPs <span>ou CLIQUE para enviar.</span>',
         maxFilesize: 0.1 // MB
     });
 
@@ -44,7 +44,7 @@ $(function() {
     // Accepted files
     $("#dropzone_accepted_files").dropzone({
         paramName: "file", // The name that will be used to transfer the file
-        dictDefaultMessage: 'Drop files to upload <span>or CLICK</span>',
+        dictDefaultMessage: 'Arraste e solte os .XMLs,.ZIPs <span>ou CLIQUE para enviar.</span>',
         maxFilesize: 1, // MB
         acceptedFiles: 'image/*'
     });
@@ -53,7 +53,7 @@ $(function() {
     // Removable thumbnails
     $("#dropzone_remove").dropzone({
         paramName: "file", // The name that will be used to transfer the file
-        dictDefaultMessage: 'Drop files to upload <span>or CLICK</span>',
+        dictDefaultMessage: 'Arraste e solte os .XMLs, .ZIPs <span>ou CLIQUE para enviar.</span>',
         maxFilesize: 1, // MB
         addRemoveLinks: true
     });
@@ -62,7 +62,7 @@ $(function() {
     // File limitations
     $("#dropzone_file_limits").dropzone({
         paramName: "file", // The name that will be used to transfer the file
-        dictDefaultMessage: 'Drop files to upload <span>or CLICK</span>',
+        dictDefaultMessage: 'Arraste e solte os .XMLs,.ZIPs <span>ou CLIQUE para enviar.</span>',
         maxFilesize: 0.4, // MB
         maxFiles: 4,
         maxThumbnailFilesize: 1,
