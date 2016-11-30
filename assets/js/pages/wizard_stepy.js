@@ -16,8 +16,8 @@ $(function() {
     $.fn.stepy.defaults.legend = false;
     $.fn.stepy.defaults.transition = 'fade';
     $.fn.stepy.defaults.duration = 150;
-    $.fn.stepy.defaults.backLabel = '<i class="icon-arrow-left13 position-left"></i> Back';
-    $.fn.stepy.defaults.nextLabel = 'Next <i class="icon-arrow-right14 position-right"></i>';
+    $.fn.stepy.defaults.backLabel = '<i class="icon-arrow-left13 position-left"></i> Voltar';
+    $.fn.stepy.defaults.nextLabel = 'Avançar <i class="icon-arrow-right14 position-right"></i>';
 
 
 

@@ -28,23 +28,6 @@
   white-space: nowrap;
 }
 
-input[type=checkbox] {
-  width: 21px;
-  height: 21px;
-  margin-right: 8px;
-  cursor: pointer;
-  font-size: 27px;
-}
-
-
-input[type=checkbox]:after {
-    content: " ";
-    background-color: #fff;
-    display: inline-block;
-    visibility: visible;
-}
-
-
 .nav-empresa{
   text-align: center;
   background: rgba(0,0,0,.12);
