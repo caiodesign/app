@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>B2Bi - Upload de notas</title>
+      <title>B2Bi - Alterar Usuário</title>
       <!-- B2Bi Global stylesheets -->
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
       <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
@@ -12,6 +12,8 @@
       <link href="assets/css/core.css" rel="stylesheet" type="text/css">
       <link href="assets/css/components.css" rel="stylesheet" type="text/css">
       <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css">
+      <link href="assets/css/extras/animate.min.css" rel="stylesheet" type="text/css">
       <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
       <!-- / B2Bi global stylesheets -->
 
@@ -97,40 +99,41 @@
                                  <li>
                                     <a href="#">Recebidas</a>
                                     <ul>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFe</a></li>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFSe</a></li>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">CTe</a></li>
+                                       <li><a href="#">NFe</a></li>
+                                       <li><a href="#">NFSe</a></li>
+                                       <li><a href="#">CTe</a></li>
                                     </ul>
                                  </li>
                                  <li>
                                     <a href="#">Emitidas</a>
                                     <ul>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFe</a></li>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFSe</a></li>
-                                       <li><a href="acesso-as-notas-recebidas-nfe.html">CTe</a></li>
+                                       <li><a href="#">NFe</a></li>
+                                       <li><a href="#">NFSe</a></li>
+                                       <li><a href="#">CTe</a></li>
                                     </ul>
                                  </li>
                               </ul>
                            </li>
-                           <li class="active">
-                              <a href="#">
+                           <li>
+                              <a href="upload.html">
                               <i class="icon-folder-upload3"></i>
                               <span>Upload de notas</span>
                               </a>
                            </li>
                            <li>
-                              <a href="emitir-notas.html">
+                              <a href="#">
                               <i class="icon-pencil6"></i>
                               <span>Emitir notas</span>
                               </a>
                            </li>
                            <li class="navigation-header"><span>Configurações</span> <i class="icon-menu" title="Main pages"></i></li>
-                           <li>
+                           <li class="active">
                               <a href="#"><i class="icon-stack"></i> <span>Minha conta</span></a>
                               <ul>
-                                 <li>
+                                 <li class="active">
                                     <a href="configurar-usuarios.html">Usuários</a>
                                  </li>
+
                                  <li>
                                     <a href="configurar-empresas.html">Empresas</a>
                                  </li>
@@ -161,53 +164,143 @@
                      <!-- B2Bi Breadcrumb -->
                      <ul class="breadcrumb">
                         <li><a href="index.html"><i class="icon-home2 position-left"></i> INÍCIO</a></li>
-                        <li><a href="#">UPLOAD DE NOTAS</a></li>
+                        <li><a href="#">MINHA CONTA</a></li>
+                        <li><a href="#">USUÁRIOS</a></li>
                      </ul>
                   </div>
                   <!-- /breadcrumb -->
-                  <div class="page-header-content" style="border-bottom: 1px solid #ddd;">
+                  <div class="page-header-content">
                      <div class="page-title">
-                        <h3><span class="text-light">Enviar documentos fiscais</span></h3>
+                        <h3><span class="text-light">Alterar Usuário</span></h3>
                      </div>
+                     <!-- /tables -->
                   </div>
+                  <div class="header-table">
+                     <!-- tables -->
+                     <ul class="nav nav-tabs nav-tabs-bottom">
+                        <li class="active text-bold">
+                           <a class=" cursor-pointer" href="#">Usuários</a>
+                        </li>
+                        <li>
+                           <a class=" cursor-pointer" href="#">Empresas</a>
+                        </li>
+                        <li>
+                           <a class=" cursor-pointer" href="#">Clientes</a>
+                        </li>
+                        <li>
+                           <a class=" cursor-pointer" href="#">Fornecedores</a>
+                        </li>
+                        <li>
+                           <a class=" cursor-pointer" href="#">Configurações</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- /tables -->
                </div>
                <!-- /page header -->
                <!-- Content area -->
                <div class="content">
 
-                <!-- Multiple file upload -->
-      					<div class="panel panel-flat" style="margin-top: 20px;">
-      						<div class="panel-heading">
-      							<h5 class="panel-title">Enviar documentos fiscais</h5>
-      							<div class="heading-elements">
-      								<ul class="icons-list">
-      			                		<li><a data-action="collapse"></a></li>
-      			                		<li><a data-action="reload"></a></li>
-      			                	</ul>
-      		                	</div>
-      						</div>
 
-      						<div class="panel-body">
-                    <div class="content-group">
-        							<p>Faça o upload de seus documentos fiscais usando o campo abaixo e seguindo as seguintes regras:</p>
-                      <li>Arquivos de até 2MB</li>
-                      <li>Arquivos .XML</li>
-                      <li>Arquivos .ZIP</li>
+                 <!-- Alterar Usuário -->
+                 <div class="panel panel-flat">
+                    <div class="panel-heading">
+                       <h5 class="panel-title">Alterar Usuário: <span class="text-info">Caio Oliveira</span></h5>
+                       <div class="heading-elements">
+                          <ul class="icons-list">
+                             <li><a data-action="collapse"></a></li>
+                          </ul>
+                       </div>
                     </div>
+                    <!-- Content -->
 
-      							<p class="text-semibold">Arraste e solte os arquivos na caixa abaixo:</p>
-      							<form action="#" class="dropzone" id="dropzone_multiple"></form>
-      						</div>
-      					</div>
-      					<!-- /multiple file upload -->
+                    <div class="panel-body">
+        							<form class="form-horizontal form-validate-jquery" action="#" novalidate="novalidate">
+        								<fieldset class="content-group">
 
+        									<!-- Nome -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Nome <span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+        											<input value="Caio Oliveira" type="text" name="basic" class="form-control" required="required" placeholder="Nome da pessoa" aria-required="true">
+        										</div>
+        									</div>
+        									<!-- /Nome -->
+
+
+        									<!-- Nome de usuario -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Nome de usuário <span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+        											<input value="caiooliveiras" type="text" name="maximum_characters" class="form-control" required="required" placeholder="Nome do login" aria-required="true">
+        										</div>
+        									</div>
+        									<!-- /Nome de usuario -->
+
+
+        									<!-- Senha -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Senha <span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+        											<input value="Ex8FQGvkP" type="password" name="password" id="password" class="form-control" required="required" placeholder="Senha do login" aria-required="true">
+        										</div>
+        									</div>
+        									<!-- /Senha -->
+
+
+        									<!-- Repetir senha -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Repetir senha<span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+        											<input value="Ex8FQGvkP" type="password" name="repeat_password" class="form-control" required="required" placeholder="Repetir senha do login" aria-required="true">
+        										</div>
+        									</div>
+        									<!-- /Repetir senha -->
+
+
+        									<!-- Email -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Email <span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+        											<input value="caiooliveiras@live.com" type="email" name="email" class="form-control" id="email" required="required" placeholder="Email do usuário" aria-required="true">
+        										</div>
+        									</div>
+        									<!-- /email -->
+
+                          <!-- Empresa -->
+        									<div class="form-group">
+        										<label class="control-label col-lg-3">Empresa <span class="text-danger">*</span></label>
+        										<div class="col-lg-9">
+                              <select data-placeholder="Selecione um tipo..." class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                 <option></option>
+                                 <option value=" ">Anadi Consultoria ERP</option>
+                                 <option selected="selected" value=" ">Caio Design LTDA</option>
+                                 <option value=" ">B2Bi Serviços LTDA</option>
+                              </select>
+        									</div>
+        									<!-- /empresa -->
+
+
+        								</fieldset>
+
+
+        								<div class="text-right">
+        									<button type="reset" class="btn btn-default" id="reset">Resetar <i class="icon-reload-alt position-right"></i></button>
+        									<button type="submit" class="btn btn-primary">Alterar <i class="icon-arrow-right14 position-right"></i></button>
+        								</div>
+        							</form>
+        						</div>
+
+                    <!-- /Content -->
+                 </div>
+
+                  <!-- /Cadastar Usuário -->
                   <!-- Footer -->
                   <footer style="padding-left: 20px;">
                      &copy; 2016. <a href="#">B2Bi APP</a></a>
                   </footer>
                   <!-- /footer -->
-
-               </div><!-- /Content area -->
+               </div>
             </div>
             <!-- /content area -->
          </div>
@@ -224,8 +317,17 @@
 	 <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
 	 <!-- /B2Bi core JS files -->
 	 <!-- B2Bi Theme JS files -->
-   <script type="text/javascript" src="assets/js/plugins/uploaders/dropzone.min.js"></script>
- 	<script type="text/javascript" src="assets/js/core/app.js"></script>
- 	<script type="text/javascript" src="assets/js/pages/uploader_dropzone.js"></script>
+	 <script type="text/javascript" src="assets/js/plugins/tables/footable/footable.min.js"></script>
+	 <script type="text/javascript" src="assets/js/pages/table_responsive.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/inputs/touchspin.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/styling/switch.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/styling/switche  ry.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+   <script type="text/javascript" src="assets/js/core/app.js"></script>
+   <script type="text/javascript" src="assets/js/pages/form_validation.js"></script>
+   <script type="text/javascript" src="assets/js/pages/form_select2.js"></script>
 	 <!-- /B2BI JS files -->
 </html>
