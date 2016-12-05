@@ -16,391 +16,769 @@
       <link href="assets/css/datepicker.css" rel="stylesheet" type="text/css">
       <link href="assets/css/extras/animate.min.css" rel="stylesheet" type="text/css">
       <!-- / B2Bi global stylesheets -->
-
    </head>
    <body>
-     <!-- B2Bi Main navbar -->
-     <div class="navbar navbar-default navbar-lg header-highlight">
-        <div class="navbar-header">
-           <a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
-           <ul class="nav navbar-nav pull-right visible-xs-block">
-              <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
-              <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
-           </ul>
-        </div>
-        <ul class="nav navbar-nav">
-           <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
-        </ul>
-        <div class="navbar-collapse collapse" id="navbar-mobile">
-           <ul class="nav navbar-nav navbar-right">
-              <li>
-                 <a href="#">
-                 <i class="icon-cog3"></i>
-                 <span class="visible-xs-inline-block position-right">Notificações</span>
-                 </a>
-              </li>
-              <li class="dropdown dropdown-user">
-                 <a class="dropdown-toggle" data-toggle="dropdown">
-                 <img src="assets/images/image.png" alt="">
-                 <span>Caio</span>
-                 <i class="caret"></i>
-                 </a>
-                 <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#"><i class="icon-user-plus"></i> Minha conta</a></li>
-                    <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Notificações</a></li>
-                    <li class="divider"></li>
-                    <li><a href="configuracoes.html"><i class="icon-cog5"></i> Configurações</a></li>
-                    <li><a href="#"><i class="icon-switch2"></i> Sair</a></li>
-                 </ul>
-              </li>
-           </ul>
-        </div>
-     </div>
-     <!-- /main navbar -->
-     <!-- Page container -->
-     <div class="page-container">
-        <!-- Page content -->
-        <div class="page-content">
-           <!-- Main sidebar -->
-           <div class="sidebar sidebar-main">
-              <div class="sidebar-content">
-                 <!-- User menu -->
-                 <div class="sidebar-user">
-                    <div class="category-content">
-                       <div class="media">
-                          <a href="#" class="media-left"><img src="assets/images/image.png" class="img-circle img-sm" alt=""></a>
-                          <div class="media-body">
-                             <span class="media-heading text-semibold">Caio Design</span>
-                             <div class="text-size-mini text-muted">
-                                <i class="icon-pin text-size-small"></i> &nbsp;São Paulo, SP
-                             </div>
-                          </div>
-                          <div class="media-right media-middle">
-                             <ul class="icons-list">
-                                <li>
-                                   <a href="#"><i class="icon-cog3"></i></a>
-                                </li>
-                             </ul>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <!-- /user menu -->
-                 <!-- Main navigation -->
-                 <div class="sidebar-category sidebar-category-visible">
-                    <div class="category-content no-padding">
-                       <ul class="navigation navigation-main navigation-accordion">
-                          <!-- Main -->
-                          <li class="navigation-header"><span>Funcionalidades</span> <i class="icon-menu" title="Main pages"></i></li>
-                          <li><a href="index.html"><i class="icon-home4"></i> <span>Painel principal</span></a></li>
-                          <li>
-                             <a href="#"><i class="icon-stack"></i> <span>Acesso às notas</span></a>
-                             <ul>
-                                <li>
-                                   <a href="#">Recebidas</a>
-                                   <ul>
-                                      <li><a href="#">NFe</a></li>
-                                      <li><a href="#">NFSe</a></li>
-                                      <li><a href="#">CTe</a></li>
-                                   </ul>
-                                </li>
-                                <li>
-                                   <a href="#">Emitidas</a>
-                                   <ul>
-                                      <li><a href="#">NFe</a></li>
-                                      <li><a href="#">NFSe</a></li>
-                                      <li><a href="#">CTe</a></li>
-                                   </ul>
-                                </li>
-                             </ul>
-                          </li>
-                          <li>
-                             <a href="upload.html">
-                             <i class="icon-folder-upload3"></i>
-                             <span>Upload de notas</span>
-                             </a>
-                          </li>
-                          <li class="active">
-                           <a href="#"><i class="icon-pencil6"></i> <span>Emitir notas</span></a>
-                         </li>
-                          <li class="navigation-header"><span>Configurações</span> <i class="icon-menu" title="Main pages"></i></li>
-                          <li>
-                             <a href="#"><i class="icon-stack"></i> <span>Minha conta</span></a>
-                             <ul>
-                                <li>
-                                   <a href="configurar-usuarios.html">Usuários</a>
-                                </li>
-
-                                <li>
-                                   <a href="configurar-empresas.html">Empresas</a>
-                                </li>
-                                <li>
-                                   <a href="configurar-clientes.html">Clientes</a>
-                                </li>
-                                <li>
-                                   <a href="configurar-fornecedores.html">Fornecedores</a>
-                                </li>
-                                <li>
-                                   <a href="configuracoes.html">Configurações</a>
-                                </li>
-                             </ul>
-                          </li>
-                          <!-- /main -->
-                       </ul>
-                    </div>
-                 </div>
-                 <!-- /main navigation -->
-              </div>
-           </div>
-           <!-- /main sidebar -->
-            <!-- Main content -->
-            <div class="content-wrapper">
-               <!-- /page header -->
-               <div class="page-header">
-                  <!-- Page header -->
-                  <div class="breadcrumb-line">
-                     <!-- B2Bi Breadcrumb -->
-                     <ul class="breadcrumb">
-                        <li><a href="index.html"><i class="icon-home2 position-left"></i> INÍCIO</a></li>
-                        <li><a href="#">EMITIR NOTAS</a></li>
+      <!-- B2Bi Main navbar -->
+      <div class="navbar navbar-default navbar-lg header-highlight">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+            <ul class="nav navbar-nav pull-right visible-xs-block">
+               <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+               <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+         </div>
+         <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>
+         </ul>
+         <div class="navbar-collapse collapse" id="navbar-mobile">
+            <ul class="nav navbar-nav navbar-right">
+               <li>
+                  <a href="#">
+                  <i class="icon-cog3"></i>
+                  <span class="visible-xs-inline-block position-right">Notificações</span>
+                  </a>
+               </li>
+               <li class="dropdown dropdown-user">
+                  <a class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="assets/images/image.png" alt="">
+                  <span>Caio</span>
+                  <i class="caret"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                     <li><a href="#"><i class="icon-user-plus"></i> Minha conta</a></li>
+                     <li><a href="#"><span class="badge badge-warning pull-right">58</span> <i class="icon-comment-discussion"></i> Notificações</a></li>
+                     <li class="divider"></li>
+                     <li><a href="configuracoes.html"><i class="icon-cog5"></i> Configurações</a></li>
+                     <li><a href="#"><i class="icon-switch2"></i> Sair</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- /main navbar -->
+      <!-- Page container -->
+      <div class="page-container">
+      <!-- Page content -->
+      <div class="page-content">
+      <!-- Main sidebar -->
+      <div class="sidebar sidebar-main">
+         <div class="sidebar-content">
+            <!-- User menu -->
+            <div class="sidebar-user">
+               <div class="category-content">
+                  <div class="media">
+                     <a href="#" class="media-left"><img src="assets/images/image.png" class="img-circle img-sm" alt=""></a>
+                     <div class="media-body">
+                        <span class="media-heading text-semibold">Caio Design</span>
+                        <div class="text-size-mini text-muted">
+                           <i class="icon-pin text-size-small"></i> &nbsp;São Paulo, SP
+                        </div>
+                     </div>
+                     <div class="media-right media-middle">
+                        <ul class="icons-list">
+                           <li>
+                              <a href="#"><i class="icon-cog3"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /user menu -->
+            <!-- Main navigation -->
+            <div class="sidebar-category sidebar-category-visible">
+               <div class="category-content no-padding">
+                  <ul class="navigation navigation-main navigation-accordion">
+                     <!-- Main -->
+                     <li class="navigation-header"><span>Funcionalidades</span> <i class="icon-menu" title="Main pages"></i></li>
+                     <li><a href="index.html"><i class="icon-home4"></i> <span>Painel principal</span></a></li>
+                     <li>
+                        <a href="#"><i class="icon-stack"></i> <span>Acesso às notas</span></a>
+                        <ul>
+                           <li>
+                              <a href="#">Recebidas</a>
+                              <ul>
+                                 <li><a href="#">NFe</a></li>
+                                 <li><a href="#">NFSe</a></li>
+                                 <li><a href="#">CTe</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#">Emitidas</a>
+                              <ul>
+                                 <li><a href="#">NFe</a></li>
+                                 <li><a href="#">NFSe</a></li>
+                                 <li><a href="#">CTe</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="upload.html">
+                        <i class="icon-folder-upload3"></i>
+                        <span>Upload de notas</span>
+                        </a>
+                     </li>
+                     <li class="active">
+                        <a href="#"><i class="icon-pencil6"></i> <span>Emitir notas</span></a>
+                     </li>
+                     <li class="navigation-header"><span>Configurações</span> <i class="icon-menu" title="Main pages"></i></li>
+                     <li>
+                        <a href="#"><i class="icon-stack"></i> <span>Minha conta</span></a>
+                        <ul>
+                           <li>
+                              <a href="configurar-usuarios.html">Usuários</a>
+                           </li>
+                           <li>
+                              <a href="configurar-empresas.html">Empresas</a>
+                           </li>
+                           <li>
+                              <a href="configurar-clientes.html">Clientes</a>
+                           </li>
+                           <li>
+                              <a href="configurar-fornecedores.html">Fornecedores</a>
+                           </li>
+                           <li>
+                              <a href="configuracoes.html">Configurações</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <!-- /main -->
+                  </ul>
+               </div>
+            </div>
+            <!-- /main navigation -->
+         </div>
+      </div>
+      <!-- /main sidebar -->
+      <!-- Main content -->
+      <div class="content-wrapper" style="background-color: #fff;">
+         <!-- /page header -->
+         <div class="page-header">
+            <!-- Page header -->
+            <div class="breadcrumb-line">
+               <!-- B2Bi Breadcrumb -->
+               <ul class="breadcrumb">
+                  <li><a href="index.html"><i class="icon-home2 position-left"></i> INÍCIO</a></li>
+                  <li><a href="#">EMITIR NOTAS</a></li>
+               </ul>
+            </div>
+            <!-- /breadcrumb -->
+            <div class="page-header-content">
+               <div class="page-title">
+                  <h3><span class="text-light">Emissão de notas</span></h3>
+               </div>
+               <div class="header-empresa">
+                  <!-- tables -->
+                  <div class="header-empresa-active">
+                     <span class="empresa">Anadi Consultoria</span>
+                  </div>
+                  <div class="header-empresa-select">
+                     <ul class="nav-empresa">
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" icon-menu"></i></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="#"><span class="label label-primary pull-right">NOVAS NOTAS</span> Anadi Con.</a></li>
+                              <li><a href="#"><span class="label label-success pull-right">OK</span> Caio Design</a></li>
+                              <li><a href="#"><span class="label label-danger pull-right">Erro</span> B2Bi Serviços</a></li>
+                           </ul>
+                        </li>
                      </ul>
                   </div>
-                  <!-- /breadcrumb -->
-                  <div class="page-header-content">
-                     <div class="page-title">
-                        <h3><span class="text-light">Emissão de notas</span></h3>
-                     </div>
-                     <div class="header-empresa">
-                        <!-- tables -->
-                        <div class="header-empresa-active">
-                           <span class="empresa">Anadi Consultoria</span>
-                        </div>
-                        <div class="header-empresa-select">
-                           <ul class="nav-empresa">
-                              <li class="dropdown">
-                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" icon-menu"></i></a>
-                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><span class="label label-primary pull-right">NOVAS NOTAS</span> Anadi Con.</a></li>
-                                    <li><a href="#"><span class="label label-success pull-right">OK</span> Caio Design</a></li>
-                                    <li><a href="#"><span class="label label-danger pull-right">Erro</span> B2Bi Serviços</a></li>
-                                 </ul>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <!-- /tables -->
-                  </div>
-                  <div class="header-table">
-                    <!-- tables -->
-                    <ul class="nav nav-tabs nav-tabs-highlight">
-                      <li class="active"><a href="#fade-tab1" data-toggle="tab">NFe</a></li>
-                      <li><a href="#fade-tab2" data-toggle="tab">Emitente</a></li>
-                      <li><a href="#fade-tab3" data-toggle="tab">Destinatário</a></li>
-                      <li><a href="#fade-tab4" data-toggle="tab">Produtos & Serviços</a></li>
-                      <li><a href="#fade-tab5" data-toggle="tab">Produtos & Serviços lista</a></li>
-                      <li><a href="#fade-tab6" data-toggle="tab">Transporte</a></li>
-                      <li><a href="#fade-tab6" data-toggle="tab">Cobrança</a></li>
-                    </ul>
-                 </div>
-                 <!-- /tables -->
                </div>
-               <!-- /page header -->
-               <!-- Content area -->
-               <div class="content">
-                 <div class="tab-content">
-
-                 <!-- Wizard with validation -->
-                 <div class="panel panel-white">
-                   <div class="panel-heading">
-                     <h6 class="panel-title">Nota fiscal</h6>
-                   </div>
-
-
-                 <div class="tab-pane fade in active" id="fade-tab1">
-                   <form class="stepy-clickable" action="#">
-                     <fieldset title="1">
-                       <legend class="text-semibold">Códigos</legend>
-
-                       <div class="row">
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Chave de referência:</label>
-                             <input type="text" name="number" class="form-control" placeholder="123.456.789.102-04">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Código do estado: <span class="text-danger">*</span></label>
-                             <input type="text" name="name" class="form-control required" placeholder="Nome Fantasia">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Código do municipio: <span class="text-danger">*</span></label>
-                             <input type="text" name="name" class="form-control required" placeholder="B2Bi Serviços LTDA">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Natureza da Operação: <span class="text-danger">*</span></label>
-                             <input type="text" name="name" class="form-control required" placeholder="">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Série: <span class="text-danger">*</span></label>
-                             <input type="text" name="name" class="form-control required" placeholder="000">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Número da NF:<span class="text-danger">*</span></label>
-                             <input type="text" name="name" class="form-control required" placeholder="00111111">
-                           </div>
-                         </div>
-
-                       </div>
-
-                     </fieldset>
-
-                     <fieldset title="2">
-                       <legend class="text-semibold">Formas</legend>
-
-                       <div class="row">
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Forma de pagamento:</label>
-                             <input type="text" name="number" class="form-control" placeholder="Pagamento à Vista">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Data da Emissão: <span class="text-danger">*</span></label>
-                             <div class="input-group date" data-provide="datepicker">
-                                <input type="text" class="form-control required" name="name" placeholder="23/10/2014">
-                                <div class="input-group-addon">
-                                   <span class="glyphicon glyphicon-th"></span>
-                                </div>
-                             </div>
-                           </div>
-                         </div>
-
-
-                         <div class="col-md-3">
-                           <div class="form-group">
-                             <label>Bairro:</label>
-                             <input type="text" name="number" class="form-control" placeholder="Paraíso">
-                           </div>
-                         </div>
-
-                         <div class="col-md-1">
-                           <div class="form-group">
-                             <label>Número:</label>
-                             <input type="text" name="number" class="form-control" placeholder="455">
-                           </div>
-                         </div>
-
-                         <div class="col-md-2">
-                           <div class="form-group">
-                             <label>Complemento:</label>
-                             <input type="text" name="number" class="form-control" placeholder="Apartamento 141 - Bloco 03">
-                           </div>
-                         </div>
-
-                         <div class="col-md-1">
-                           <div class="form-group">
-                             <label>UF: <span class="text-danger">*</span></label>
-                             <input type="text" name="number" class="form-control required" placeholder="SP">
-                           </div>
-                         </div>
-                         </div>
-
-
-                     </fieldset>
-
-                     <fieldset title="3">
-                       <legend class="text-semibold">Arquivos & segurança</legend>
-
-                       <div class="row">
-                         <div class="col-md-3">
-                           <div class="form-group">
-                             <label>Logotipo da empresa (DANFE): <span class="text-danger">*</span></label>
-                             <input name="recommendations" type="file" class="file-styled">
-                             <span class="help-block">Formatos: .jpg e .png - tamanho máximo 2Mb</span>
-                           </div>
-                         </div>
-
-                         <div class="col-md-3">
-                           <div class="form-group">
-                             <label>Certificado Digital A1 (extensão .PFX): <span class="text-danger">*</span></label>
-                             <input name="recommendations" type="file" class="file-styled">
-                             <span class="help-block">Formatos: .jpg e .png - tamanho máximo 2Mb</span>
-                           </div>
-                         </div>
-
-                         <div class="col-md-3">
-                           <div class="form-group">
-                             <label>Senha do certificado: <span class="text-danger">*</span></label>
-                             <input type="text" name="number" class="form-control required" placeholder="327139812319028390">
-                           </div>
-                         </div>
-
-                         <div class="col-md-3">
-                           <div class="form-group">
-                             <label>Tipo da  manifestação do destinatário: <span class="text-danger">*</span></label>
-                             <select name="university-country" data-placeholder="Selecione uma manifestação..." class="select">
-                                 <option></option>
-                                 <option value="1">Sem manifestação</option>
-                                 <option value="2">Confirmada</option>
-                                 <option value="3">Desconhecida</option>
-                                 <option value="4">Não realizada</option>
-                                 <option value="4">Ciencia</option>
-                             </select>
-                           </div>
-                         </div>
-
-                       </div>
-                     </fieldset>
-
-                     <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
-                   </form>
-                 </div>
-
-
-                 </div>
-                 <!-- /wizard with validation -->
-               </div>
-
-               </div><!-- /Content area -->
+               <!-- /tables -->
             </div>
-            <!-- /content area -->
+            <div class="header-table">
+               <!-- tables -->
+               <ul class="nav nav-tabs nav-tabs-highlight">
+                  <li class="active"><a href="#emitir-nfe" data-toggle="tab">NFe</a></li>
+                  <li><a href="#emitir-emitente" data-toggle="tab">Emitente</a></li>
+                  <li><a href="#emitir-destinatario" data-toggle="tab">Destinatário</a></li>
+                  <li><a href="#emitir-produtos-servicos" data-toggle="tab">Produtos & Serviços</a></li>
+                  <li><a href="#emitir-produtos-servicos-lista" data-toggle="tab">Produtos & Serviços lista</a></li>
+                  <li><a href="#emitir-transporte" data-toggle="tab">Transporte</a></li>
+                  <li><a href="#emitir-cobranca" data-toggle="tab">Cobrança</a></li>
+               </ul>
+            </div>
+            <!-- /tables -->
          </div>
-         <!-- /main content -->
-      </div>
-      <!-- /page content -->
+         <!-- /page header -->
+         <!-- Content area -->
+         <div class="content">
+            <div class="tab-content">
+               <!--Emitir notas -->
+               <!-- NFe -->
+               <div class="tab-pane fade in active" id="emitir-nfe">
+                  <div class="panel panel-white">
+                     <div class="panel-heading">
+                        <h6 class="panel-title">Nota fiscal<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                     </div>
+                     <form class="stepy-clickable" action="#">
+                        <fieldset title="1">
+                           <legend class="text-semibold">Códigos</legend>
+                           <div class="row">
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Chave de referência:</label>
+                                    <input type="text" name="number" class="form-control" placeholder="123.456.789.102-04">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Código do estado: <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control required" placeholder="Nome Fantasia">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Código do municipio: <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control required" placeholder="B2Bi Serviços LTDA">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Natureza da Operação: <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control required" placeholder="">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Série: <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control required" placeholder="000">
+                                 </div>
+                              </div>
+                              <div class="col-md-2">
+                                 <div class="form-group">
+                                    <label>Número da NF:<span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control required" placeholder="00111111">
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                        <fieldset title="2">
+                           <legend class="text-semibold">Formas</legend>
+                           <div class="row">
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Forma de pagamento: <span class="text-danger">*</span></label>
+                                    <select name="pagamento" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Pagamento à vista</option>
+                                       <option value="2">Pagamento à prazo</option>
+                                       <option value="3">Outros</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Tipo do documento: <span class="text-danger">*</span></label>
+                                    <select name="tipo" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Saída</option>
+                                       <option value="2">Entrada</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Operação: <span class="text-danger">*</span></label>
+                                    <select name="operacao" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Operação interna</option>
+                                       <option value="2">Operação interestadual</option>
+                                       <option value="3">Operação com exterior</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Forma de emissão: <span class="text-danger">*</span></label>
+                                    <select name="forma-emissao" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Normal</option>
+                                       <option value="2">Contigência FS-IA</option>
+                                       <option value="3">Contigência SCAN</option>
+                                       <option value="4">Contigência DPEC</option>
+                                       <option value="5">Contigência FS-DA</option>
+                                       <option value="6">Contigência SVC-AN</option>
+                                       <option value="7">Contigência SVC-RS</option>
+                                       <option value="8">Contigência offline da NFC-e</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Finalidade da emissão: <span class="text-danger">*</span></label>
+                                    <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">NF-e Normal</option>
+                                       <option value="2">NF-e Complementar</option>
+                                       <option value="3">NF-e de Ajuste</option>
+                                       <option value="4">Devolução/Retorno</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Tipo da impressão DANFE: <span class="text-danger">*</span></label>
+                                    <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Retrato</option>
+                                       <option value="2">Paisagem</option>
+                                       <option value="3">DANFE Simplificado</option>
+                                       <option value="4">DANFE NFC-e</option>
+                                       <option value="5">DANFE NFC-e mensagem</option>
+                                       <option value="6">Sem geração DANFE</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Consumidor final: <span class="text-danger">*</span></label>
+                                    <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">SIM</option>
+                                       <option value="2">NÃO</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-3">
+                                 <div class="form-group">
+                                    <label>Tipo de atendimento: <span class="text-danger">*</span></label>
+                                    <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                       <option></option>
+                                       <option value="1">Não se aplica</option>
+                                       <option value="2">Operação não presencial</option>
+                                       <option value="2">Operação não presencial, pela internet</option>
+                                       <option value="2">Operação não presencial, pela teleatendimento</option>
+                                       <option value="2">NFC-e em operação com entrega de domincílio</option>
+                                       <option value="2">Operação não presencial, outros</option>
+                                    </select>
+                                 </div>
+                              </div>
+                        </fieldset>
+                        <fieldset title="3">
+                        <legend class="text-semibold">Outros</legend>
+                        <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                        <label>Reservado ao Fisco:</label>
+                        <input type="text" name="name" class="form-control" placeholder="">
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                        <label>Informações complementares:</label>
+                        <input type="text" name="name" class="form-control" placeholder="">
+                        </div>
+                        </div>
+                        </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                     </form>
+                     </div>
+                  </div>
+                  <!-- /NFe -->
+                  <!-- Emitente -->
+                  <div class="tab-pane fade in" id="emitir-emitente">
+                     <div class="panel panel-white">
+                        <div class="panel-heading">
+                           <h6 class="panel-title">Emitente<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                        </div>
+                        <form class="stepy-clickable" action="#">
+                           <fieldset title="1">
+                              <legend class="text-semibold">Endereço</legend>
+                              <div class="row">
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>Endereço: <span class="text-danger">*</span></label>
+                                       <input type="text" name="number" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>Número: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>Complemento:</label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>Bairro: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>UF: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                       <label>CEP:<span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                              </div>
+                           </fieldset>
+                           <fieldset title="2">
+                              <legend class="text-semibold">Endereço</legend>
+                              <div class="row">
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label>Código do município: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="3548807">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label>Município: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label>Código do país: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="1058">
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                       <label>País: <span class="text-danger">*</span></label>
+                                       <input type="text" name="name" class="form-control required" placeholder="Brasil">
+                                    </div>
+                                 </div>
+                           </fieldset>
+                           <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                        </form>
+                        </div>
+                     </div>
+                     <!-- /Emitente -->
+                     <!-- Destinatário -->
+                     <div class="tab-pane fade in" id="emitir-destinatario">
+                        <div class="panel panel-white">
+                           <div class="panel-heading">
+                              <h6 class="panel-title">Destinatário<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                           </div>
+                           <form class="stepy-clickable" action="#">
+                              <fieldset title="1">
+                                 <legend class="text-semibold">Dados</legend>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Nome fantasia:</label>
+                                          <input type="text" name="number" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Razão social: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>CNPJ:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Estrangeiro: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Tipo de contribuinte: <span class="text-danger">*</span></label>
+                                          <select name="pagamento" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                             <option></option>
+                                             <option value="1">Contribuinte ICMS</option>
+                                             <option value="1">Contribuinte ISENTO</option>
+                                             <option value="1">Não contribuinte</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Inscrição estadual:<span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Inscrição municipal:<span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </fieldset>
+                              <fieldset title="2">
+                                 <legend class="text-semibold">Endereço</legend>
+                                 <div class="row">
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Endereço: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Número: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Complemento:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Bairro: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Município: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>UF: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>CEP:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Código do país: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Páis: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>Telefone:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="form-group">
+                                          <label>E-mail:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                       </div>
+                                    </div>
+                              </fieldset>
+                              <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                           </form>
+                           </div>
+                           <!-- /Desinatário -->
+                        </div>
+                        <!-- Emitir notas -->
+                        <!-- Destinatário -->
+                        <div class="tab-pane fade in" id="emitir-produtos-servicos">
+                           <div class="panel panel-white">
+                              <div class="panel-heading">
+                                 <h6 class="panel-title">Produtos & Serviços<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                              </div>
+
+                              <div class="header-table">
+                                 <!-- tables -->
+                                 <ul class="nav nav-tabs nav-tabs-highlight">
+                                    <li class="active"><a href="#produtos-produto" data-toggle="tab">Produto</a></li>
+                                    <li><a href="#produtos-ICMS" data-toggle="tab">ICMS</a></li>
+                                    <li><a href="#produtos-ICMS-ST" data-toggle="tab">ICMS ST</a></li>
+                                    <li><a href="#produtos-ICMS-operacoes" data-toggle="tab">ICMS em operações interestaduais</a></li>
+                                    <li><a href="#produtos-IPI" data-toggle="tab">IPI</a></li>
+                                    <li><a href="#produtos-PIS" data-toggle="tab">PIS</a></li>
+                                    <li><a href="#produtos-COFINS" data-toggle="tab">COFINS</a></li>
+                                    <li><a href="#produtos-imposto-importacao" data-toggle="tab">Imposto de importação</a></li>
+                                    <li><a href="#produtos-DI" data-toggle="tab">DI</a></li>
+                                    <li><a href="#produtos-DI-lista" data-toggle="tab">DI lista</a></li>
+                                    <li><a href="#produtos-adicoes" data-toggle="tab">Adições</a></li>
+                                 </ul>
+                              </div>
+
+                                <div class="tab-pane fade in" id="produtos-produto">
+                                  <form class="stepy-clickable" action="#">
+                                     <fieldset title="1">
+                                        <legend class="text-semibold">Dados</legend>
+                                        <div class="row">
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Código:</label>
+                                                 <input type="text" name="number" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Descrição: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>NCM: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>CEST: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>CFOP: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>CEAN: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Un. da medida: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Quantidade: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor unitário: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor tot. bruto: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Número do pedido de compra:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Número de controle FCI:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </fieldset>
+                                     <fieldset title="2">
+                                        <legend class="text-semibold">Outros</legend>
+                                        <div class="row">
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor do frete:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor do seguro:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor do frete:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor do seguro:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Valor do desconto: <span class="text-danger">*</span></label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                              <div class="form-group">
+                                                 <label>Outros valores:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                              <div class="form-group">
+                                                 <label>Inforamações adicionais:</label>
+                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                              </div>
+                                           </div>
+
+                                     </fieldset>
+                                     <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                                  </form>
+                                </div>
+
+                              </div>
+                              <!-- /Desinatário -->
+
+                     </div>
+
+
+                  <!-- /Content area -->
+               </div>
+               <!-- /content area -->
+            </div>
+            <!-- /main content -->
+         </div>
+         <!-- /page content -->
       </div>
       <!-- /page container -->
    </body>
-	 <!-- B2Bi Core JS files -->
-	 <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-	 <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-	 <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-	 <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-	 <!-- /B2Bi core JS files -->
-	 <!-- B2Bi Theme JS files -->
+   <!-- B2Bi Core JS files -->
+   <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+   <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+   <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+   <!-- /B2Bi core JS files -->
+   <!-- B2Bi Theme JS files -->
    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
- 	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
- 	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
- 	<script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
- 	<script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
- 	<script type="text/javascript" src="assets/js/core/app.js"></script>
- 	<script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
-	 <!-- /B2BI JS files -->
+   <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+   <script type="text/javascript" src="assets/js/core/libraries/jasny_bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/js/plugins/forms/validation/validate.min.js"></script>
+   <script type="text/javascript" src="assets/js/core/app.js"></script>
+   <script type="text/javascript" src="assets/js/pages/wizard_stepy.js"></script>
+   <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+   <!-- /B2BI JS files -->
 </html>
