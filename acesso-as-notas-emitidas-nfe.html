@@ -99,17 +99,17 @@
                                  <li>
                                     <a href="#">Recebidas</a>
                                     <ul>
-                                       <li><a href="#">NFe</a></li>
-                                       <li><a href="#">NFSe</a></li>
-                                       <li><a href="#">CTe</a></li>
+                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFe</a></li>
+                                       <li><a href="acesso-as-notas-recebidas-nfe.html">NFSe</a></li>
+                                       <li><a href="acesso-as-notas-recebidas-nfe.html">CTe</a></li>
                                     </ul>
                                  </li>
-                                 <li class="active">
+                                 <li>
                                     <a href="#">Emitidas</a>
                                     <ul>
-                                       <li class="active"><a href="#">NFe</a></li>
-                                       <li><a href="#">NFSe</a></li>
-                                       <li><a href="#">CTe</a></li>
+                                       <li class="active"><a href="acesso-as-notas-emitidas-nfe.html">NFe</a></li>
+                                       <li><a href="acesso-as-notas-emitidas-nfe.html">NFSe</a></li>
+                                       <li><a href="acesso-as-notas-emitidas-nfe.html">CTe</a></li>
                                     </ul>
                                  </li>
                               </ul>
@@ -279,121 +279,53 @@
                   <!-- /B2Bi Filter Buttons -->
                   <!-- FILTROS -->
                   <div class="col-md-12" id="b2bi-filtros" style="display: none;">
-                     <div class="col-md-3">
+                     <div class="col-md-2">
                         <p class="content-group-sm">
-                           <label>Número da NF:</label>
+                           <label>Número:</label>
                            <select data-placeholder="Digite o número da NF" multiple="multiple" class="select-access-multiple-value">
                               <option value=""></option>
-                              <option value=" ">333723770</option>
-                              <option value=" ">222723771</option>
-                              <option value=" " selected="selected">992723772</option>
-                              <option value=" ">4447234770</option>
-                              <option value=" ">100723770</option>
-                              <option value=" " selected="selected">023723770</option>
-                              <option value=" ">111723770</option>
+                              <option value=" ">21</option>
+                              <option value=" ">22</option>
+                              <option value=" " selected="selected">23</option>
                            </select>
                         </p>
-                     </div>
-                     <div class="col-md-3">
-                        <p class="content-group-sm">
-                           <label>Chave NF-e:</label>
-                           <select data-placeholder="Digite a chave da NF-e" multiple="multiple" class="select-access-multiple-value">
-                              <option value=""></option>
-                              <option value=" ">35116...05471</option>
-                              <option value=" ">35116...05471</option>
-                              <option value=" ">35116...05471</option>
-                              <option value=" " selected="selected">35116...05471</option>
-                              <option value=" ">35116...05471</option>
-                              <option value=" ">35116...05471</option>
-                              <option value=" ">35116...05471</option>
-                           </select>
-                        </p>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="form-group">
-                           <label>Tipo:</label>
-                           <select data-placeholder="Selecione um tipo..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                              <option></option>
-                              <option value=" ">NF de entrada</option>
-                              <option value=" ">NF de Saída</option>
-                              <option value=" ">CTe</option>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="form-group">
-                           <label>Manifestação:</label>
-                           <select data-placeholder="Selecione uma manifestação..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                              <option></option>
-                              <option value=" ">Sem manifestação do destinatário</option>
-                              <option value=" ">Confirmada operação</option>
-                              <option value=" ">Desconhecida</option>
-                              <option value=" ">Operação não realizada</option>
-                              <option value=" ">Ciencia</option>
-                           </select>
-                        </div>
                      </div>
                      <div class="col-md-2">
-                        <div class="form-group">
-                           <label>Situação:</label>
-                           <select data-placeholder="Selecione uma situação..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                              <option></option>
-                              <option value=" ">Uso autorizado</option>
-                              <option value=" ">Uso denegado</option>
-                              <option value=" ">NF-e cancelada</option>
+                        <p class="content-group-sm">
+                           <label>Série:</label>
+                           <select data-placeholder="Digite a chave da NF-e" multiple="multiple" class="select-access-multiple-value">
+                              <option value=""></option>
+                              <option value=" ">60</option>
+                              <option value=" ">61</option>
+                              <option value=" ">62</option>
+                              <option value=" " selected="selected">63</option>
                            </select>
-                        </div>
+                        </p>
+                     </div>
+                     <div class="col-md-3">
+                       <p class="content-group-sm">
+                          <label>CNPJ Emitente:</label>
+                          <select data-placeholder="Digite a chave da NF-e" multiple="multiple" class="select-access-multiple-value">
+                             <option value="">5645112312984</option>
+                             <option value=" ">5641231251984</option>
+                             <option value=" " selected="selected">5645213211984</option>
+                          </select>
+                       </p>
                      </div>
                      <div class="col-md-3">
                         <div class="form-group">
-                           <label>Destinatário:</label>
-                           <select data-placeholder="Selecione um destinatário..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                           <label>Razão social Emitente:</label>
+                           <select data-placeholder="Razão social do emitente..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
                               <option></option>
-                              <optgroup label="São Paulo">
-                                 <option value=" ">Caio Design</option>
-                                 <option value=" ">Anadi Consultoria</option>
-                                 <option value=" ">Elaine Oliveira Arquitetura</option>
-                              </optgroup>
-                              <optgroup label="Rio de Janeiro">
-                                 <option value=" ">Água Mineral Frescca</option>
-                                 <option value=" ">Água Mineral Crystal</option>
-                                 <option value=" ">Nestle RJ LTDA</option>
-                              </optgroup>
-                              <optgroup label="Brasília">
-                                 <option value=" ">Apple LTDA</option>
-                                 <option value=" ">Samsung Smartphones LTDA</option>
-                                 <option value=" ">Minipa do Brasil LTDA</option>
-                                 <option value=" ">ECOVIAS Estradas LTDA</option>
-                              </optgroup>
+                              <option value=" ">ATRIA AUTOMAÇÃO</option>
+                              <option value=" ">QWERT AUTOMAÇÃO</option>
+                              <option value=" ">AZCS AUTOMAÇÃO</option>
+                              <option value=" ">ASP AUTOMAÇÃO</option>
                            </select>
                         </div>
                      </div>
-                     <div class="col-md-3">
-                        <div class="form-group">
-                           <label>Emitente</label>
-                           <select data-placeholder="Selecione um emitente..." class="select-size-lg select2-hidden-accessible" tabindex="-1" aria-hidden="true">
-                              <option></option>
-                              <optgroup label="São Paulo">
-                                 <option value=" ">Caio Design</option>
-                                 <option value=" ">Anadi Consultoria</option>
-                                 <option value=" ">Elaine Oliveira Arquitetura</option>
-                              </optgroup>
-                              <optgroup label="Rio de Janeiro">
-                                 <option value=" ">Água Mineral Frescca</option>
-                                 <option value=" ">Água Mineral Crystal</option>
-                                 <option value=" ">Nestle RJ LTDA</option>
-                              </optgroup>
-                              <optgroup label="Brasília">
-                                 <option value=" ">Apple LTDA</option>
-                                 <option value=" ">Samsung Smartphones LTDA</option>
-                                 <option value=" ">Minipa do Brasil LTDA</option>
-                                 <option value=" ">ECOVIAS Estradas LTDA</option>
-                              </optgroup>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="col-md-6">
+
+                     <div class="col-md-2">
                            <div class="form-group">
                               <label>Período:</label>
                               <div class="input-group date" data-provide="datepicker">
@@ -403,18 +335,6 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                              <label>Até:</label>
-                              <div class="input-group date" data-provide="datepicker">
-                                 <input type="text" class="form-control">
-                                 <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-th"></span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                      <div class="col-md-6">
                         <button type="button" class="btn text-semibold bg-b2bi btn-ladda btn-ladda-progress" data-style="expand-left" data-spinner-size="20">

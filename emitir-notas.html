@@ -98,17 +98,17 @@
                            <li>
                               <a href="#">Recebidas</a>
                               <ul>
-                                 <li><a href="#">NFe</a></li>
-                                 <li><a href="#">NFSe</a></li>
-                                 <li><a href="#">CTe</a></li>
+                                 <li><a href="acesso-as-notas-recebidas-nfe.html">NFe</a></li>
+                                 <li><a href="acesso-as-notas-recebidas-nfe.html">NFSe</a></li>
+                                 <li><a href="acesso-as-notas-recebidas-nfe.html">CTe</a></li>
                               </ul>
                            </li>
                            <li>
                               <a href="#">Emitidas</a>
                               <ul>
-                                 <li><a href="#">NFe</a></li>
-                                 <li><a href="#">NFSe</a></li>
-                                 <li><a href="#">CTe</a></li>
+                                 <li><a href="acesso-as-notas-emitidas-nfe.html">NFe</a></li>
+                                 <li><a href="acesso-as-notas-emitidas-nfe.html">NFSe</a></li>
+                                 <li><a href="acesso-as-notas-emitidas-nfe.html">CTe</a></li>
                               </ul>
                            </li>
                         </ul>
@@ -207,7 +207,7 @@
          <div class="content">
             <div class="tab-content">
                <!--Emitir notas -->
-               <!-- NFe -->
+
                <div class="tab-pane fade in active" id="emitir-nfe">
                   <div class="panel panel-white">
                      <div class="panel-heading">
@@ -374,7 +374,7 @@
                         </div>
                         </div>
                         </fieldset>
-                        <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                        <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
                      </form>
                      </div>
                   </div>
@@ -455,7 +455,7 @@
                                     </div>
                                  </div>
                            </fieldset>
-                           <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                           <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
                         </form>
                         </div>
                      </div>
@@ -589,174 +589,1242 @@
                                        </div>
                                     </div>
                               </fieldset>
-                              <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
+                              <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
                            </form>
                            </div>
                            <!-- /Desinatário -->
                         </div>
                         <!-- Emitir notas -->
-                        <!-- Destinatário -->
+                        <!-- Produtos e Serviços -->
                         <div class="tab-pane fade in" id="emitir-produtos-servicos">
                            <div class="panel panel-white">
                               <div class="panel-heading">
                                  <h6 class="panel-title">Produtos & Serviços<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
                               </div>
 
-                              <div class="header-table">
-                                 <!-- tables -->
-                                 <ul class="nav nav-tabs nav-tabs-highlight">
-                                    <li class="active"><a href="#produtos-produto" data-toggle="tab">Produto</a></li>
-                                    <li><a href="#produtos-ICMS" data-toggle="tab">ICMS</a></li>
-                                    <li><a href="#produtos-ICMS-ST" data-toggle="tab">ICMS ST</a></li>
-                                    <li><a href="#produtos-ICMS-operacoes" data-toggle="tab">ICMS em operações interestaduais</a></li>
-                                    <li><a href="#produtos-IPI" data-toggle="tab">IPI</a></li>
-                                    <li><a href="#produtos-PIS" data-toggle="tab">PIS</a></li>
-                                    <li><a href="#produtos-COFINS" data-toggle="tab">COFINS</a></li>
-                                    <li><a href="#produtos-imposto-importacao" data-toggle="tab">Imposto de importação</a></li>
-                                    <li><a href="#produtos-DI" data-toggle="tab">DI</a></li>
-                                    <li><a href="#produtos-DI-lista" data-toggle="tab">DI lista</a></li>
-                                    <li><a href="#produtos-adicoes" data-toggle="tab">Adições</a></li>
-                                 </ul>
-                              </div>
+                              <form class="stepy-clickable" action="#">
+                                 <fieldset title="Dados">
+                                    <legend class="text-semibold">Produto</legend>
+                                    <div class="row">
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Código:</label>
+                                             <input type="text" name="number" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Descrição: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>NCM: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>CEST: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>CFOP: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>CEAN: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Un. da medida: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Quantidade: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor unitário: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor tot. bruto: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Número do pedido de compra:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Número de controle FCI:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor do frete:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor do seguroI:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor do desconto:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Outros valores:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Informações adicionais:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </fieldset>
+                                 <fieldset title="2">
+                                    <legend class="text-semibold">ICMS</legend>
+                                    <div class="row">
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Origem: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Situação tributária: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Modalidade BCICMS:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Percentual da redução do BC:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>BCICMS: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Alíquota do ICMS:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                          </div>
+                                       </div>
 
-                                <div class="tab-pane fade in" id="produtos-produto">
-                                  <form class="stepy-clickable" action="#">
-                                     <fieldset title="1">
-                                        <legend class="text-semibold">Dados</legend>
-                                        <div class="row">
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Código:</label>
-                                                 <input type="text" name="number" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Descrição: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>NCM: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>CEST: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>CFOP: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>CEAN: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Un. da medida: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Quantidade: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor unitário: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor tot. bruto: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Número do pedido de compra:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Número de controle FCI:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
+                                 </fieldset>
+                                 <fieldset title="3">
+
+                                    <legend class="text-semibold">ICMS ST</legend>
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Modalidade de determinação da BC do ICMS ST: <span class="text-danger">*</span></label>
+                                             <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                <option></option>
+                                                <option value="1">Preço tabelado ou máximo sugerido</option>
+                                                <option value="2">Lista negativa (valor)</option>
+                                                <option value="3">Lista positiva (valor)</option>
+                                                <option value="4">Listra neutra (valor)</option>
+                                                <option value="5">Margem valor agregado (%)</option>
+                                                <option value="6">Pauta (valor)</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Percentual da margem de valor Adicionado do ICMS ST:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Percentual da Redução de BC do ICMS ST:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor da BC do ICMS ST: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Alíquota do imposto do ICMS ST *: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS ST: <span class="text-danger">*</span></label>
+                                             <input type="text" name="name" class="form-control required" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor da BC do ICMS Retido Anteriormente:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS Retido Anteriormente:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor da BC do ICMS ST da UF destino:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS ST da UF destino:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+
+
+                                 </fieldset>
+                                 <fieldset title="4">
+
+                                    <legend class="text-semibold">ICMS Interestadual</legend>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                         <div class="form-group">
+                                            <label>Valor da BC do ICMS na UF do destinatário</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                         <div class="form-group">
+                                            <label>Percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP) na UF de destino</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                         <div class="form-group">
+                                            <label>Alíquota interna da UF do destinatário</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Alíquota interestadual das UF envolvidas:</label>
+                                             <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                <option></option>
+                                                <option value="1">4% alíquota interestadual para produtos importados</option>
+                                                <option value="2">7% para os Estados de origem do Sul e Sudeste (exceto ES), destinando para os Estados Norte e Nordeste ou ES</option>
+                                                <option value="3">Lista positiva (valor)</option>
+                                                <option value="4">Listra neutra (valor)</option>
+                                                <option value="5">Margem valor agregado (%)</option>
+                                                <option value="6">Pauta (valor)</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Percentual provisório de partilha entre os Estados:</label>
+                                             <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                <option></option>
+                                                <option value="1">40% em 2016</option>
+                                                <option value="2">60% em 2017</option>
+                                                <option value="3">80% em 2018</option>
+                                                <option value="4">100% a partir de 2019</option>
+                                                <option value="5">Margem valor agregado (%)</option>
+                                                <option value="6">Pauta (valor)</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP) da UF de destino:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS de partilha para a UF do destinatário:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Valor do ICMS de partilha para a UF do remetente:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                 </fieldset>
+
+                                 <fieldset title="5">
+                                    <legend class="text-semibold">IPI</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Situação Tributária: <span class="text-danger">*</span></label>
+                                            <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                               <option></option>
+                                               <option value="1">Entrada com recuperação de crédito</option>
+                                               <option value="2">Entrada tributada com alíquota zero</option>
+                                               <option value="3">Entrada isenta</option>
+                                            </select>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Classe de enquadramento: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Código de enquadramento: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>CNPJ do produtor:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Código de selo de controle:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da base do cálculo:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Alíquota do IPI:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                       <div class="col-md-3">
+                                          <div class="form-group">
+                                             <label>Valor do IPI:</label>
+                                             <input type="text" name="name" class="form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="form-group">
+                                             <label>Qtd. total unidade padrão:</label>
+                                             <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="form-group">
+                                             <label>Valor por unidade:</label>
+                                             <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                          </div>
+                                       </div>
+                                 </fieldset>
+
+                                 <fieldset title="6">
+                                    <legend class="text-semibold">PIS</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Situação Tributária: <span class="text-danger">*</span></label>
+                                            <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                               <option></option>
+                                               <option value="1">Operação tributável</option>
+                                               <option value="1">Operação tributável</option>
+                                               <option value="1">Operação tributável</option>
+                                            </select>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da base de cálculo:</label>
+                                            <input type="text" name="name" class=" form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor da Alíquota:</label>
+                                            <input type="text" name="name" class=" form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor do PIS:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Quantidade vendida:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                 </fieldset>
+
+                                 <fieldset title="7">
+                                    <legend class="text-semibold">COFINS</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Situação Tributária: <span class="text-danger">*</span></label>
+                                            <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                               <option></option>
+                                               <option value="1">Operação tributável</option>
+                                               <option value="1">Operação tributável</option>
+                                               <option value="1">Operação tributável</option>
+                                            </select>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da base de cálculo:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor da Alíquota:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor do COFINS:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Quantidade vendida:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                 </fieldset>
+
+                                 <fieldset title="8">
+                                    <legend class="text-semibold">Imposto de importação</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da base de cálculo:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor das despesas aduaneiras:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor do II:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-2">
+                                         <div class="form-group">
+                                            <label>Valor do IOF:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                 </fieldset>
+
+                                 <fieldset title="9">
+                                    <legend class="text-semibold">DI</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Número do documento de importação: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="000">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Data de registro do documento: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="000">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Código do exportador: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="000">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Via de transporte internacional: <span class="text-danger">*</span></label>
+                                            <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                               <option></option>
+                                               <option value="1">Marítima</option>
+                                               <option value="1">Fluvial</option>
+                                               <option value="1">Lacustre</option>
+                                            </select>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da AFRMM:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Tipo de importação: <span class="text-danger">*</span></label>
+                                            <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                               <option></option>
+                                               <option value="1">Por conta própria</option>
+                                               <option value="1">Por conta e ordem</option>
+                                               <option value="1">Encomenda</option>
+                                            </select>
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>UF Desembaraço: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Local desembaraço: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Data desembaraço: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="required form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>UF do adiquirente/encomendante:</label>
+                                            <input type="text" name="name" class=" form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>CNPJ do adiquirente/encomendante:</label>
+                                            <input type="text" name="name" class=" form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                 </fieldset>
+
+
+                                 <fieldset title="10">
+                                    <legend class="text-semibold">DI Lista</legend>
+                                    <!-- B2BI QUERY -->
+                                    <div class="panel panel-flat">
+                                       <div class="panel-heading">
+                                          <h5 class="panel-title">Lista de declarações</h5>
+                                          <div class="heading-elements">
+                                             <ul class="icons-list">
+                                                <li><a data-action="collapse"></a></li>
+                                                <li><a data-action="reload"></a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       <table class="table table-togglable table-hover text-center table-usuario">
+                                          <thead>
+                                             <tr>
+                                                <th data-toggle="true">Item</th>
+                                                <th data-toggle="phone">Número</th>
+                                                <th data-toggle="true">Data</th>
+                                                <th data-toggle="true">Exportador</th>
+                                                <th data-hide="phone">UF Desemb. Aduaneiro</th>
+                                                <th data-hide="phone,tablet">Local Desemb. Aduaneiro</th>
+                                                <th data-hide="phone">Data Desemb. Aduaneiro</th>
+                                                <th data-toggle="true">Ações</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+
+                                             <tr><!-- Usuario 01 -->
+                                                <td>123</td>
+                                                <td>984</td>
+                                                <td>23/12/16</td>
+                                                <td>Exportador X</td>
+                                                <td>123</td>
+                                                <td>231</td>
+                                                <td>23/12/17</td>
+                                                <td>
+                                                  <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                  <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                               </td>
+                                             </tr><!-- /Usuario 01 -->
+
+                                             <tr><!-- Usuario 02 -->
+                                               <td>123</td>
+                                               <td>984</td>
+                                               <td>23/12/16</td>
+                                               <td>Exportador X</td>
+                                               <td>123</td>
+                                               <td>231</td>
+                                               <td>23/12/17</td>
+                                               <td>
+                                                 <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                 <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                              </td>
+                                             </tr><!-- /Usuario 02 -->
+
+                                             <tr><!-- Usuario 03 -->
+                                               <td>123</td>
+                                               <td>984</td>
+                                               <td>23/12/16</td>
+                                               <td>Exportador X</td>
+                                               <td>123</td>
+                                               <td>231</td>
+                                               <td>23/12/17</td>
+                                               <td>
+                                                 <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                 <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                              </td>
+                                             </tr><!-- /Usuario 03 -->
+
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <!-- /B2BI QUERY -->
+                                 </fieldset>
+
+                                 <fieldset title="11">
+                                    <legend class="text-semibold">Adições</legend>
+                                    <div class="row">
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Número: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="form-control required" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Valor da Alíquota: <span class="text-danger">*</span></label>
+                                            <input type="text" name="name" class="form-control required" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Desconto:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                         <div class="form-group">
+                                            <label>Número de Drawback:</label>
+                                            <input type="text" name="name" class="form-control" placeholder="0.00">
+                                         </div>
+                                      </div>
+                                 </fieldset>
+
+
+                                 <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
+                              </form>
+
+
+                     	</div><!-- /Panel White -->
+
+                    </div><!-- /Produtos e Serviços -->
+
+                    <!-- Produtos Lista -->
+                    <div class="tab-pane fade in" id="emitir-produtos-servicos-lista">
+                      <!-- B2BI QUERY -->
+                      <div class="panel panel-flat">
+                         <div class="panel-heading">
+                            <h5 class="panel-title">Lista de declarações</h5>
+                            <div class="heading-elements">
+                               <ul class="icons-list">
+                                  <li><a data-action="collapse"></a></li>
+                                  <li><a data-action="reload"></a></li>
+                               </ul>
+                            </div>
+                         </div>
+                         <table class="table table-togglable table-hover text-center table-usuario">
+                            <thead>
+                               <tr>
+                                  <th data-toggle="true">Item</th>
+                                  <th data-toggle="phone">Número</th>
+                                  <th data-toggle="true">Data</th>
+                                  <th data-toggle="true">Exportador</th>
+                                  <th data-hide="phone">UF Desemb. Aduaneiro</th>
+                                  <th data-hide="phone,tablet">Local Desemb. Aduaneiro</th>
+                                  <th data-hide="phone">Data Desemb. Aduaneiro</th>
+                                  <th data-toggle="true">Ações</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+
+                               <tr><!-- Usuario 01 -->
+                                  <td>123</td>
+                                  <td>984</td>
+                                  <td>23/12/16</td>
+                                  <td>Exportador X</td>
+                                  <td>123</td>
+                                  <td>231</td>
+                                  <td>23/12/17</td>
+                                  <td>
+                                    <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                    <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                 </td>
+                               </tr><!-- /Usuario 01 -->
+
+                               <tr><!-- Usuario 02 -->
+                                 <td>123</td>
+                                 <td>984</td>
+                                 <td>23/12/16</td>
+                                 <td>Exportador X</td>
+                                 <td>123</td>
+                                 <td>231</td>
+                                 <td>23/12/17</td>
+                                 <td>
+                                   <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                   <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                </td>
+                               </tr><!-- /Usuario 02 -->
+
+                               <tr><!-- Usuario 03 -->
+                                 <td>123</td>
+                                 <td>984</td>
+                                 <td>23/12/16</td>
+                                 <td>Exportador X</td>
+                                 <td>123</td>
+                                 <td>231</td>
+                                 <td>23/12/17</td>
+                                 <td>
+                                   <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                   <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                </td>
+                               </tr><!-- /Usuario 03 -->
+
+                            </tbody>
+                         </table>
+                      </div>
+                      <!-- /B2BI QUERY -->
+                      </div><!-- /Produtos Lista -->
+
+                      <!-- Transporte -->
+                      <div class="tab-pane fade in" id="emitir-transporte">
+                         <div class="panel panel-white">
+                            <div class="panel-heading">
+                               <h6 class="panel-title">Transporte<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                            </div>
+                            <form class="stepy-clickable" action="#">
+                              <fieldset title="1">
+                                 <legend class="text-semibold">Transportador</legend>
+                                 <div class="row">
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Modalidade pro Frete: <span class="text-danger">*</span></label>
+                                         <select name="finalidade" data-placeholder="Selecione (obrigatório)" class="required select select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                            <option></option>
+                                            <option value="1">Por conta do emitente</option>
+                                            <option value="2">Por conta do Dest./Emit.</option>
+                                            <option value="3">Por conta de terceiros</option>
+                                            <option value="4">Sem Frete</option>
+                                         </select>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>CNPJ:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>CPF:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Razão Social/Nome Fantasia:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Inscrição Estadual:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Endereço:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Municipio:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>UF:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                              </fieldset>
+
+                              <fieldset title="2">
+                                 <legend class="text-semibold">Veículo</legend>
+                                 <div class="row">
+                                   <div class="col-md-4">
+                                      <div class="form-group">
+                                         <label>Placa: <span class="text-danger">*</span></label>
+                                         <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                      <div class="form-group">
+                                        <label>UF: <span class="text-danger">*</span></label>
+                                        <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4">
+                                      <div class="form-group">
+                                        <label>RNTC:</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                              </fieldset>
+
+                              <fieldset title="3">
+                                 <legend class="text-semibold">Reboque/Balsa/Vagão</legend>
+                                 <div class="row">
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                         <label>Placa: <span class="text-danger">*</span></label>
+                                         <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>UF: <span class="text-danger">*</span></label>
+                                        <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>RNTC:</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                         <label>Vagão: <span class="text-danger">*</span></label>
+                                         <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-3">
+                                      <div class="form-group">
+                                        <label>Balsa: <span class="text-danger">*</span></label>
+                                        <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                              </fieldset>
+
+                              <fieldset title="4">
+                                 <legend class="text-semibold">Reboque Lista</legend>
+                                 <!-- B2BI QUERY -->
+                                 <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                       <h5 class="panel-title">Lista de declarações</h5>
+                                       <div class="heading-elements">
+                                          <ul class="icons-list">
+                                             <li><a data-action="collapse"></a></li>
+                                             <li><a data-action="reload"></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <table class="table table-togglable table-hover text-center table-usuario">
+                                       <thead>
+                                          <tr>
+                                             <th data-toggle="true">Item</th>
+                                             <th data-toggle="phone">Número</th>
+                                             <th data-toggle="true">Data</th>
+                                             <th data-toggle="true">Exportador</th>
+                                             <th data-hide="phone">UF Desemb. Aduaneiro</th>
+                                             <th data-hide="phone,tablet">Local Desemb. Aduaneiro</th>
+                                             <th data-hide="phone">Data Desemb. Aduaneiro</th>
+                                             <th data-toggle="true">Ações</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+
+                                          <tr><!-- Usuario 01 -->
+                                             <td>123</td>
+                                             <td>984</td>
+                                             <td>23/12/16</td>
+                                             <td>Exportador X</td>
+                                             <td>123</td>
+                                             <td>231</td>
+                                             <td>23/12/17</td>
+                                             <td>
+                                               <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                               <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                            </td>
+                                          </tr><!-- /Usuario 01 -->
+
+                                          <tr><!-- Usuario 02 -->
+                                            <td>123</td>
+                                            <td>984</td>
+                                            <td>23/12/16</td>
+                                            <td>Exportador X</td>
+                                            <td>123</td>
+                                            <td>231</td>
+                                            <td>23/12/17</td>
+                                            <td>
+                                              <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                              <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                           </td>
+                                          </tr><!-- /Usuario 02 -->
+
+                                          <tr><!-- Usuario 03 -->
+                                            <td>123</td>
+                                            <td>984</td>
+                                            <td>23/12/16</td>
+                                            <td>Exportador X</td>
+                                            <td>123</td>
+                                            <td>231</td>
+                                            <td>23/12/17</td>
+                                            <td>
+                                              <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                              <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                           </td>
+                                          </tr><!-- /Usuario 03 -->
+
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <!-- /B2BI QUERY -->
+                              </fieldset>
+
+                              <fieldset title="5">
+                                 <legend class="text-semibold">Volumes</legend>
+                                 <div class="row">
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                         <label>Quantidade:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>Espécie:</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>Marca:</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                         <label>Númeração:</label>
+                                         <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>Peso Liq. (KG):</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                                   <div class="col-md-2">
+                                      <div class="form-group">
+                                        <label>Peso Liq. (KG):</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                      </div>
+                                   </div>
+                              </fieldset>
+
+                              <fieldset title="6">
+                                 <legend class="text-semibold">Volumes Lista</legend>
+                                 <!-- B2BI QUERY -->
+                                 <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                       <h5 class="panel-title">Lista de declarações</h5>
+                                       <div class="heading-elements">
+                                          <ul class="icons-list">
+                                             <li><a data-action="collapse"></a></li>
+                                             <li><a data-action="reload"></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <table class="table table-togglable table-hover text-center table-usuario">
+                                       <thead>
+                                          <tr>
+                                             <th data-toggle="true">Item</th>
+                                             <th data-toggle="phone">Número</th>
+                                             <th data-toggle="true">Data</th>
+                                             <th data-toggle="true">Exportador</th>
+                                             <th data-hide="phone">UF Desemb. Aduaneiro</th>
+                                             <th data-hide="phone,tablet">Local Desemb. Aduaneiro</th>
+                                             <th data-hide="phone">Data Desemb. Aduaneiro</th>
+                                             <th data-toggle="true">Ações</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+
+                                          <tr><!-- Usuario 01 -->
+                                             <td>123</td>
+                                             <td>984</td>
+                                             <td>23/12/16</td>
+                                             <td>Exportador X</td>
+                                             <td>123</td>
+                                             <td>231</td>
+                                             <td>23/12/17</td>
+                                             <td>
+                                               <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                               <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                            </td>
+                                          </tr><!-- /Usuario 01 -->
+
+                                          <tr><!-- Usuario 02 -->
+                                            <td>123</td>
+                                            <td>984</td>
+                                            <td>23/12/16</td>
+                                            <td>Exportador X</td>
+                                            <td>123</td>
+                                            <td>231</td>
+                                            <td>23/12/17</td>
+                                            <td>
+                                              <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                              <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                           </td>
+                                          </tr><!-- /Usuario 02 -->
+
+                                          <tr><!-- Usuario 03 -->
+                                            <td>123</td>
+                                            <td>984</td>
+                                            <td>23/12/16</td>
+                                            <td>Exportador X</td>
+                                            <td>123</td>
+                                            <td>231</td>
+                                            <td>23/12/17</td>
+                                            <td>
+                                              <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                              <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                           </td>
+                                          </tr><!-- /Usuario 03 -->
+
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <!-- /B2BI QUERY -->
+                              </fieldset>
+
+
+                              <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
+                            </form>
+                          </div>
+                        </div><!-- /Transporte -->
+
+                        <!-- Cobrança -->
+                        <div class="tab-pane fade in" id="emitir-cobranca">
+                           <div class="panel panel-white">
+                              <div class="panel-heading">
+                                 <h6 class="panel-title">Cobrança<span class="text-light"> - campos com <span class="text-danger">*</span> são obrigatórios!</span></h6>
+                              </div>
+                              <form class="stepy-clickable" action="#">
+                                <fieldset title="1">
+                                   <legend class="text-semibold">Fatura</legend>
+                                   <div class="row">
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                           <label>Número:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="Digite aqui">
                                         </div>
-                                     </fieldset>
-                                     <fieldset title="2">
-                                        <legend class="text-semibold">Outros</legend>
-                                        <div class="row">
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor do frete:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor do seguro:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor do frete:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor do seguro:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Valor do desconto: <span class="text-danger">*</span></label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-2">
-                                              <div class="form-group">
-                                                 <label>Outros valores:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
-                                           <div class="col-md-6">
-                                              <div class="form-group">
-                                                 <label>Inforamações adicionais:</label>
-                                                 <input type="text" name="name" class="form-control" placeholder="Digite aqui">
-                                              </div>
-                                           </div>
+                                     </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                           <label>Valor original:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                           <label>Valor desconto:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                           <label>Valor liquído:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                </fieldset>
 
-                                     </fieldset>
-                                     <button type="submit" class="btn btn-primary stepy-finish">Enviar <i class="icon-check position-right"></i></button>
-                                  </form>
-                                </div>
+                                <fieldset title="2">
+                                   <legend class="text-semibold">Duplicatas</legend>
+                                   <div class="row">
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                           <label>Número:</label>
+                                           <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                          <label>Data de vencimento:</label>
+                                          <input type="text" name="name" class="form-control" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                        <div class="form-group">
+                                          <label>Valor: <span class="text-danger">*</span></label>
+                                          <input type="text" name="name" class="form-control required" placeholder="Digite aqui">
+                                        </div>
+                                     </div>
+                                </fieldset>
 
-                              </div>
-                              <!-- /Desinatário -->
 
-                     </div>
+                                <fieldset title="3">
+                                   <legend class="text-semibold">Duplicatas lista</legend>
+                                   <!-- B2BI QUERY -->
+                                   <div class="panel panel-flat">
+                                      <div class="panel-heading">
+                                         <h5 class="panel-title">Lista de declarações</h5>
+                                         <div class="heading-elements">
+                                            <ul class="icons-list">
+                                               <li><a data-action="collapse"></a></li>
+                                               <li><a data-action="reload"></a></li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                      <table class="table table-togglable table-hover text-center table-usuario">
+                                         <thead>
+                                            <tr>
+                                               <th data-toggle="true">Item</th>
+                                               <th data-toggle="phone">Número</th>
+                                               <th data-toggle="true">Data</th>
+                                               <th data-toggle="true">Exportador</th>
+                                               <th data-hide="phone">UF Desemb. Aduaneiro</th>
+                                               <th data-hide="phone,tablet">Local Desemb. Aduaneiro</th>
+                                               <th data-hide="phone">Data Desemb. Aduaneiro</th>
+                                               <th data-toggle="true">Ações</th>
+                                            </tr>
+                                         </thead>
+                                         <tbody>
+
+                                            <tr><!-- Usuario 01 -->
+                                               <td>123</td>
+                                               <td>984</td>
+                                               <td>23/12/16</td>
+                                               <td>Exportador X</td>
+                                               <td>123</td>
+                                               <td>231</td>
+                                               <td>23/12/17</td>
+                                               <td>
+                                                 <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                 <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                              </td>
+                                            </tr><!-- /Usuario 01 -->
+
+                                            <tr><!-- Usuario 02 -->
+                                              <td>123</td>
+                                              <td>984</td>
+                                              <td>23/12/16</td>
+                                              <td>Exportador X</td>
+                                              <td>123</td>
+                                              <td>231</td>
+                                              <td>23/12/17</td>
+                                              <td>
+                                                <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                             </td>
+                                            </tr><!-- /Usuario 02 -->
+
+                                            <tr><!-- Usuario 03 -->
+                                              <td>123</td>
+                                              <td>984</td>
+                                              <td>23/12/16</td>
+                                              <td>Exportador X</td>
+                                              <td>123</td>
+                                              <td>231</td>
+                                              <td>23/12/17</td>
+                                              <td>
+                                                <a href="#"><i class="icon-spinner11 text-info"></i></a>
+                                                <a href="#"><i class="delete-button icon-cross2 text-danger"></i></a>
+                                             </td>
+                                            </tr><!-- /Usuario 03 -->
+
+                                         </tbody>
+                                      </table>
+                                   </div>
+                                   <!-- /B2BI QUERY -->
+                                </fieldset>
+
+                                <button type="submit" class="btn btn-primary stepy-finish">Cadastrar <i class="icon-check position-right"></i></button>
+                              </form>
+                            </div>
+                          </div><!-- /Cobrança -->
 
 
                   <!-- /Content area -->
                </div>
+
                <!-- /content area -->
             </div>
             <!-- /main content -->
@@ -772,6 +1840,8 @@
    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
    <!-- /B2Bi core JS files -->
    <!-- B2Bi Theme JS files -->
+   <script type="text/javascript" src="assets/js/plugins/tables/footable/footable.min.js"></script>
+	 <script type="text/javascript" src="assets/js/pages/table_responsive.js"></script>
    <script type="text/javascript" src="assets/js/plugins/forms/wizards/stepy.min.js"></script>
    <script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
    <script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
